@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+.input-group-addon:last-child{ opacity:0;}
+/* CSS Document */
+.s-banner{height:150px; background:url(../../images/admin-banner.jpg) no-repeat top center;}
+.user-box{margin-top:53px;}
+.user-box img{width:97px; height:97px;}
+.user-pic{width:97px; height:97px; border-radius:97px; margin-top:11px; float:left;}
+.user-box .mt{margin:35px 0 0 10px; color:#fff; line-height:25px;}
+.order-message{color:#fff;}
+.cell-num{ background:#fa9600; border-radius:6px; padding:0px 5px; margin-left:10px; color:#fff;}
+/*页面基础*/
+.user-title{background:#75b845; height:46px; padding-left:30%; line-height:46px; color:#fff;}
+.user-right-box{border:1px solid #ddd; padding:10px 10px 30px 10px;margin-bottom:30px; min-height:500px;}
+.manage{font-size:16px; font-weight:bold; line-height:24px; text-align:center; padding:8px 0;border-left:1px solid #ddd;border-right:1px solid #ddd;}
+.manage .am{width:24px; height:24px; display:inline-block; background:url(../../images/icon.png) no-repeat 0 0; vertical-align:middle; margin:0 10px 0 -34px;}
+.manage .am.am-project{background-position:0 -147px;}
+.manage .am.am-order{background-position:-21px -147px;}
+.manage .am.am-rate{background-position:-47px -147px;}
+.manage .am.am-time{background-position:-69px -147px;}
+.manage .am.am-check{background-position:-93px -147px;}
+.user-nav{border-left:1px solid #ddd;border-right:1px solid #ddd; padding-bottom:20px;}
+.user-nav li{ height:39px; text-align:center; line-height:39px;}
+.user-nav li a{color:#333;}
+.user-nav li.active,.user-nav li:hover{background:#e5e5e5; font-weight:bold; border-left:2px solid #75b845; margin-left:-2px;}
+.user-nav li.active a,.user-nav li:hover a{color:#75b845;}
+.user-nav:last-child{border-bottom:1px solid #ddd;}
+
+.user-right-box li{position:relative; border-bottom:1px dashed #ddd; overflow:hidden; padding:16px 0;}
+.user-right-box li:last-child{border-bottom:none;}
+
+/*上传产品*/
+.mybalance{margin-top:50px;}
+.mybalance .form-group{ line-height:30px;}
+.mybalance .btn-green,.mybalance .btn-orange{margin-left:10px; padding:5px 25px;}
+.mybalance .form-group{ overflow:hidden; margin-bottom:19px;}
+.mybalance .form-group input[type=text]{width:214px; height:30px; border-radius:0;}
+.mybalance .alltime{margin-left:10px;margin-top:5px;}
+.mybalance .form-group input[type=text].codetext{width:107px;}
+.mybalance .form-group .codebtn{width:97px; padding:3px 10px;}
+.house-color input[type=checkbox]{ margin:0px 0 0 10px; vertical-align:middle;}
+.mybalance .form-group select{width:107px; height:30px; line-height:30px; padding-top:2px; border-radius:0;}
+.mybalance .form-group .text1{width:97px; margin-left:10px;}
+.add-design{display:none;}
+.add-design:first-child{display:block;}
+.addother{cursor:pointer;}
+.install{margin:10px 0 0 -30px;}
+a.btn-change:hover,a.btn-change:focus{color:#fff;}
+
+.pagination{
+	position: absolute;
+	z-index: 20;
+	right: 50%;
+	bottom: 25px;
+	margin: 0 auto;
+	margin-right: -20px
+}
+/*销售订单*/
+.decorate{width:150px; height:150px;}
+.decorate img{width:100%; height:100%;}
+.deco-detail{line-height:29px; padding-left:19px; max-width:350px;}
+.lookzone{padding-top:110px;}
+.user-right-box li{position:relative; border-bottom:1px dashed #ddd; overflow:hidden; padding:16px 0;}
+.user-right-box li:last-child{border-bottom:none;}
+.btn-position{position:absolute; bottom:25px; right:15px; }
+.design-num{top:0px; right:15px; color:#999;}
+.design-num span{padding-left:20px; display:inline-block;}
+.design-num span:first-child{padding:0;}
+
+/*城市费率*/
+.rate-box{margin:50px 20px 0; line-height:34px;}
+.rate-box .form-control{width:13%; border-radius:0; margin-right:7px;}
+.zone-txt{margin-right:10px;}
+.add-rate{margin-left:20px;}
+.table-list th,.table-list tr{ text-align:center;}
+#ModifyRate{line-height:34px;}
+#ModifyRate .form-control{width:20%; border-radius:0; margin-right:7px; }
+#ModifyRate .form-group{ overflow:hidden;}
+/*施工订单*/
+.btn-orange{padding: 5px 30px;}
+@media all and (max-width: 992px){
+	.Construst .col-md-7{position: absolute; top: 20px; right: 0;}
+}
+/*商品审核*/
+.goods-check{padding:20px 50px 50px;}
+.goods-check li{ line-height:40px; overflow:hidden; border-bottom:none; padding:0;}
+.goods-check li .check-title{width:80px; margin-right:10px; float:left;}
+.goods-check li .check-content{width:500px; margin-right:10px; float:left;}
+.check-content span{ margin-right:10px;}
+.check-content img{margin:13px 10px 0 0; max-width:500px;}
+.check-content .check-message{width:500px; min-height:150px; margin:13px 0 0 0; border:1px solid #ddd;}
+.check-control{padding:20px 0 0 89px;}
+.check-control .btn-yellow{border-radius:0;}

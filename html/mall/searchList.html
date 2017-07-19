@@ -1,0 +1,705 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>生态树商城</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 引入 Bootstrap -->
+<link href="../../Style/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../../Style/font-awesome.min.css">
+<link href="../../Style/reset.css" rel="stylesheet">
+<link href="../../Style/main.css" rel="stylesheet">
+<link href="../../Style/mall/mall.css" rel="stylesheet">
+<!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+<!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+<!--[if lt IE 9]>
+ <script src="../Scripts/html5shiv.js"></script>
+ <script src="../Scripts/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!--顶部-->
+<div class="s-top">
+	<div class="container">
+    	<div class="row">
+            <div class="col-sm-12 text-right">
+            	<a href="login.html">登录</a><span> | </span><a href="register.html">注册</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--头部-->
+<div class="s-header">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-sm-3 mt10"><a href="index.html"><img src="../../images/mall/malllogo.png"></a></div>
+            <div class="col-sm-4 mt15">
+                <input type="text" class="form-control search-text" placeholder="搜索并添加材料" >
+                <a href="javascript:;" class="search-btn"><i class="icon-search-b color-green fs20"></i></a>
+            </div>
+            <div class="col-sm-5 text-right">
+            	<ul class="nav nav-pills nav-justified mt15">
+                	<li class="active"><a href="index.html" target="_blank">我要装修</a></li>
+                    <li><a href="myLoan.html" target="_blank">我要贷款</a></li>
+                    <li><a href="" target="_blank">建材商城</a></li>
+                    <li><a href="mall/mall.html" target="_blank">家具商城</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="rel banner-nav banner-category">
+    <div class="container rel">
+        <div class="nav-container">
+            <div class="row">
+                <div class="col-xs-2" style="height:35px;" id="slide-box">
+                    <div class="banner-nav-title">所有类目</div>
+                    <div class="banner-nav-list category rel">
+                        <ul>
+                            <li>
+                                <div class="category-name">家具</div>
+                                <div class="open-category">
+                                    <a href="">茶几/边几/几类</a><a href="">书架/搁架/架类</a><a href="">书桌/餐桌/桌类</a><a href="">衣柜/书柜/柜类</a><a href="">椅子/凳子</a><a href="">沙发</a><a href="">床垫</a><a href="">床</a><a href="">家具套装</a><a href="">梳妆台</a><a href="">创意/其他家具</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="category-name">定制家具</div>
+                                <div class="open-category">
+                                    <a href="">定制家具</a><a href="">品牌定制家具</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="category-name">沙发</div>
+                                <div class="open-category">
+                                    <a href="">布艺沙发</a><a href="">皮艺沙发</a><a href="">实木沙发</a><a href="">皮布结合沙发</a><a href="">其他沙发</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="category-name">床垫</div>
+                                <div class="open-category">
+                                    <a href="">弹簧床垫</a><a href="">乳胶床垫</a><a href="">天然棕垫</a><a href="">海绵床垫</a><a href="">其他床垫</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="category-name">床上用品</div>
+                                <div class="open-category">
+                                    <a href="">床上四件套</a><a href="">靠垫抱枕</a><a href="">凉席</a><a href="">毯子</a><a href="">枕头</a><a href="">被子被芯</a><a href="">护颈枕</a><a href="">枕套</a><a href="">毛巾浴巾</a><a href="">被子</a><a href="">床垫</a><a href="">其它家纺</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="category-name">厨房用品</div>
+                                <div class="open-category">
+                                    <a href="">厨用储物用品</a><a href="">刀具</a><a href="">锅/煲</a><a href="">餐具/杯具</a><a href="">烹饪锅具</a><a href="">止回阀</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="category-name">卫浴用品</div>
+                                <div class="open-category">
+                                    <a href="">毛巾浴巾</a><a href="">其他卫浴用品</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="category-name">收纳/清洁/净化</div>
+                                <div class="open-category">
+                                    <a href="">家用收纳用具</a><a href="">清洁用品</a><a href="">空气净化</a><a href="">其他用品</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="category-name">饰品软装</div>
+                                <div class="open-category">
+                                    <a href="">花瓶/灯/工艺品/其他</a><a href="">装饰画/照片墙/壁纸</a><a href="">地毯/挂毯/毯类</a><a href="">窗帘</a><a href="">钟</a><a href="">墙体彩绘</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="category-name">生活家电</div>
+                                <div class="open-category">
+                                    <a href="">吸尘器/清洗机</a><a href="">空气净化器/氧吧</a><a href="">饮水机</a><a href="">加湿器</a><a href="">除湿器</a><a href="">空调</a><a href="">电陶炉</a><a href="">电饭煲</a><a href="">其他小家电</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="category-name">大家电</div>
+                                <div class="open-category">
+                                    <a href="">洗衣机</a><a href="">电视机</a><a href="">冰箱</a><a href="">空调</a><a href="">其他大家电</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="category-name">智能家居/其他</div>
+                                <div class="open-category">
+                                    <a href="">智能家居</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="container">
+    <div class="s-road"><a href="index.html">生态树商城</a> > <a href="">家居商城</a> > <a href="">所有分类</a> > <a href="">家具软装</a> > <a href="">沙发</a> > <a href="">布艺沙发</a></div>
+</div>
+<div class="container search-content">
+    <div class="col-xs-9">
+        <div class="filtrate">
+            <ul>
+                <li>
+                    <div class="col-xs-3 text-right">
+                        品牌：
+                    </div>
+                    <div class="col-xs-9">
+                        <a href="">四格</a><a href="">精益豪庭</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="col-xs-3 text-right">沙发功能：</div>
+                    <div class="col-xs-9"><a href="">旋转</a><a href="">多功能</a><a href="">坐具</a></div>
+                </li>
+                <li>
+                    <div class="col-xs-3 text-right">颜色：</div>
+                    <div class="col-xs-9"><a href="">其它</a></div>
+                </li>
+                <li>
+                    <div class="col-xs-3 text-right">风格(新)：</div>
+                    <div class="col-xs-9"><a href="">日式风格</a><a href="">地中海风格</a><a href="">现代简约</a></div>
+                </li>
+                <li>
+                    <div class="col-xs-3 text-right">面料：</div>
+                    <div class="col-xs-9"><a href="">细绒/细麻</a></div>
+                </li>
+            </ul>
+            <div class="control-btn fs12"><span>收起筛选条件</span> <i class="icon-angle-up fs14"></i></div>
+        </div>
+        <!--其他筛选-->
+        <div class="other-filtrate mt25">
+            <div class="col-xs-9">
+                <div class="fl">排序：</div>
+                <select class="form-control fl rank">
+                  <option>默认排序</option>
+                  <option>价格从低到高</option>
+                  <option>价格从高到低</option>
+                  <option>销量从低到高</option>
+                  <option>销量从高到低</option>
+                </select>
+                <a href="javascript:;" class="seller">销量 <i class="icon-angle-down fs14"></i></a>
+                <a href="javascript:;" class="price">价格 <i class="icon-angle-down fs14"></i></a>
+                <input type="text" class="form-control"> - <input type="text" class="form-control"><input type="button" class="btn btn-gry" value="确 定">
+            </div>
+            <div class="col-xs-3">
+                <div class="list-style-one fl"><a href="search.html"></a></div>
+                <div class="list-style-two fl  active"><a href="searchList.html"></a></div>
+                <div class="list-page fr"><a href="" class="icon-angle-left fs18 color9"></a>&emsp;<span class="fs12">1/100</span>&emsp;<a href="" class="icon-angle-right fs18"></a></div>
+            </div>
+        </div>
+        <div class="search-list">
+            <ul class="row">
+                <li>
+                    <div class="search-cell">
+                        <div class="search-img rel col-xs-3">
+                            <a href="" target="_blank"><img src="../../images/mall/goods-pic.jpg"></a>
+                        </div>
+                        <div class="search-tip col-xs-5"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+小户型客厅布艺沙发 2008</a></div>
+                        <div class="search-detail col-xs-2"><span class="price fs16 color-orange">￥1589</span></div>
+                        <div class="search-detail col-xs-2"><span class="color9 fs12">已售出<span class="color3">80</span></span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="search-cell">
+                        <div class="search-img rel col-xs-3">
+                            <a href="" target="_blank"><img src="../../images/mall/goods-pic.jpg"></a>
+                        </div>
+                        <div class="search-tip col-xs-5"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+小户型客厅布艺沙发 2008</a></div>
+                        <div class="search-detail col-xs-2"><span class="price fs16 color-orange">￥1589</span></div>
+                        <div class="search-detail col-xs-2"><span class="color9 fs12">已售出<span class="color3">80</span></span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="search-cell">
+                        <div class="search-img rel col-xs-3">
+                            <a href="" target="_blank"><img src="../../images/mall/goods-pic.jpg"></a>
+                        </div>
+                        <div class="search-tip col-xs-5"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+小户型客厅布艺沙发 2008</a></div>
+                        <div class="search-detail col-xs-2"><span class="price fs16 color-orange">￥1589</span></div>
+                        <div class="search-detail col-xs-2"><span class="color9 fs12">已售出<span class="color3">80</span></span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="search-cell">
+                        <div class="search-img rel col-xs-3">
+                            <a href="" target="_blank"><img src="../../images/mall/goods-pic.jpg"></a>
+                        </div>
+                        <div class="search-tip col-xs-5"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+小户型客厅布艺沙发 2008</a></div>
+                        <div class="search-detail col-xs-2"><span class="price fs16 color-orange">￥1589</span></div>
+                        <div class="search-detail col-xs-2"><span class="color9 fs12">已售出<span class="color3">80</span></span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="search-cell">
+                        <div class="search-img rel col-xs-3">
+                            <a href="" target="_blank"><img src="../../images/mall/goods-pic.jpg"></a>
+                        </div>
+                        <div class="search-tip col-xs-5"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+小户型客厅布艺沙发 2008</a></div>
+                        <div class="search-detail col-xs-2"><span class="price fs16 color-orange">￥1589</span></div>
+                        <div class="search-detail col-xs-2"><span class="color9 fs12">已售出<span class="color3">80</span></span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="search-cell">
+                        <div class="search-img rel col-xs-3">
+                            <a href="" target="_blank"><img src="../../images/mall/goods-pic.jpg"></a>
+                        </div>
+                        <div class="search-tip col-xs-5"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+小户型客厅布艺沙发 2008</a></div>
+                        <div class="search-detail col-xs-2"><span class="price fs16 color-orange">￥1589</span></div>
+                        <div class="search-detail col-xs-2"><span class="color9 fs12">已售出<span class="color3">80</span></span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="search-cell">
+                        <div class="search-img rel col-xs-3">
+                            <a href="" target="_blank"><img src="../../images/mall/goods-pic.jpg"></a>
+                        </div>
+                        <div class="search-tip col-xs-5"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+小户型客厅布艺沙发 2008</a></div>
+                        <div class="search-detail col-xs-2"><span class="price fs16 color-orange">￥1589</span></div>
+                        <div class="search-detail col-xs-2"><span class="color9 fs12">已售出<span class="color3">80</span></span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="search-cell">
+                        <div class="search-img rel col-xs-3">
+                            <a href="" target="_blank"><img src="../../images/mall/goods-pic.jpg"></a>
+                        </div>
+                        <div class="search-tip col-xs-5"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+小户型客厅布艺沙发 2008</a></div>
+                        <div class="search-detail col-xs-2"><span class="price fs16 color-orange">￥1589</span></div>
+                        <div class="search-detail col-xs-2"><span class="color9 fs12">已售出<span class="color3">80</span></span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="search-cell">
+                        <div class="search-img rel col-xs-3">
+                            <a href="" target="_blank"><img src="../../images/mall/goods-pic.jpg"></a>
+                        </div>
+                        <div class="search-tip col-xs-5"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+小户型客厅布艺沙发 2008</a></div>
+                        <div class="search-detail col-xs-2"><span class="price fs16 color-orange">￥1589</span></div>
+                        <div class="search-detail col-xs-2"><span class="color9 fs12">已售出<span class="color3">80</span></span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="search-cell">
+                        <div class="search-img rel col-xs-3">
+                            <a href="" target="_blank"><img src="../../images/mall/goods-pic.jpg"></a>
+                        </div>
+                        <div class="search-tip col-xs-5"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+小户型客厅布艺沙发 2008</a></div>
+                        <div class="search-detail col-xs-2"><span class="price fs16 color-orange">￥1589</span></div>
+                        <div class="search-detail col-xs-2"><span class="color9 fs12">已售出<span class="color3">80</span></span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="search-cell">
+                        <div class="search-img rel col-xs-3">
+                            <a href="" target="_blank"><img src="../../images/mall/goods-pic.jpg"></a>
+                        </div>
+                        <div class="search-tip col-xs-5"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+小户型客厅布艺沙发 2008</a></div>
+                        <div class="search-detail col-xs-2"><span class="price fs16 color-orange">￥1589</span></div>
+                        <div class="search-detail col-xs-2"><span class="color9 fs12">已售出<span class="color3">80</span></span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="search-cell">
+                        <div class="search-img rel col-xs-3">
+                            <a href="" target="_blank"><img src="../../images/mall/goods-pic.jpg"></a>
+                        </div>
+                        <div class="search-tip col-xs-5"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+小户型客厅布艺沙发 2008</a></div>
+                        <div class="search-detail col-xs-2"><span class="price fs16 color-orange">￥1589</span></div>
+                        <div class="search-detail col-xs-2"><span class="color9 fs12">已售出<span class="color3">80</span></span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="search-cell">
+                        <div class="search-img rel col-xs-3">
+                            <a href="" target="_blank"><img src="../../images/mall/goods-pic.jpg"></a>
+                        </div>
+                        <div class="search-tip col-xs-5"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+小户型客厅布艺沙发 2008</a></div>
+                        <div class="search-detail col-xs-2"><span class="price fs16 color-orange">￥1589</span></div>
+                        <div class="search-detail col-xs-2"><span class="color9 fs12">已售出<span class="color3">80</span></span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="search-cell">
+                        <div class="search-img rel col-xs-3">
+                            <a href="" target="_blank"><img src="../../images/mall/goods-pic.jpg"></a>
+                        </div>
+                        <div class="search-tip col-xs-5"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+小户型客厅布艺沙发 2008</a></div>
+                        <div class="search-detail col-xs-2"><span class="price fs16 color-orange">￥1589</span></div>
+                        <div class="search-detail col-xs-2"><span class="color9 fs12">已售出<span class="color3">80</span></span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="search-cell">
+                        <div class="search-img rel col-xs-3">
+                            <a href="" target="_blank"><img src="../../images/mall/goods-pic.jpg"></a>
+                        </div>
+                        <div class="search-tip col-xs-5"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+小户型客厅布艺沙发 2008</a></div>
+                        <div class="search-detail col-xs-2"><span class="price fs16 color-orange">￥1589</span></div>
+                        <div class="search-detail col-xs-2"><span class="color9 fs12">已售出<span class="color3">80</span></span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="search-cell">
+                        <div class="search-img rel col-xs-3">
+                            <a href="" target="_blank"><img src="../../images/mall/goods-pic.jpg"></a>
+                        </div>
+                        <div class="search-tip col-xs-5"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+小户型客厅布艺沙发 2008</a></div>
+                        <div class="search-detail col-xs-2"><span class="price fs16 color-orange">￥1589</span></div>
+                        <div class="search-detail col-xs-2"><span class="color9 fs12">已售出<span class="color3">80</span></span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="search-cell">
+                        <div class="search-img rel col-xs-3">
+                            <a href="" target="_blank"><img src="../../images/mall/goods-pic.jpg"></a>
+                        </div>
+                        <div class="search-tip col-xs-5"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+小户型客厅布艺沙发 2008</a></div>
+                        <div class="search-detail col-xs-2"><span class="price fs16 color-orange">￥1589</span></div>
+                        <div class="search-detail col-xs-2"><span class="color9 fs12">已售出<span class="color3">80</span></span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="search-cell">
+                        <div class="search-img rel col-xs-3">
+                            <a href="" target="_blank"><img src="../../images/mall/goods-pic.jpg"></a>
+                        </div>
+                        <div class="search-tip col-xs-5"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+小户型客厅布艺沙发 2008</a></div>
+                        <div class="search-detail col-xs-2"><span class="price fs16 color-orange">￥1589</span></div>
+                        <div class="search-detail col-xs-2"><span class="color9 fs12">已售出<span class="color3">80</span></span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="search-cell">
+                        <div class="search-img rel col-xs-3">
+                            <a href="" target="_blank"><img src="../../images/mall/goods-pic.jpg"></a>
+                        </div>
+                        <div class="search-tip col-xs-5"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+小户型客厅布艺沙发 2008</a></div>
+                        <div class="search-detail col-xs-2"><span class="price fs16 color-orange">￥1589</span></div>
+                        <div class="search-detail col-xs-2"><span class="color9 fs12">已售出<span class="color3">80</span></span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="search-cell">
+                        <div class="search-img rel col-xs-3">
+                            <a href="" target="_blank"><img src="../../images/mall/goods-pic.jpg"></a>
+                        </div>
+                        <div class="search-tip col-xs-5"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+小户型客厅布艺沙发 2008</a></div>
+                        <div class="search-detail col-xs-2"><span class="price fs16 color-orange">￥1589</span></div>
+                        <div class="search-detail col-xs-2"><span class="color9 fs12">已售出<span class="color3">80</span></span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="search-cell">
+                        <div class="search-img rel col-xs-3">
+                            <a href="" target="_blank"><img src="../../images/mall/goods-pic.jpg"></a>
+                        </div>
+                        <div class="search-tip col-xs-5"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+小户型客厅布艺沙发 2008</a></div>
+                        <div class="search-detail col-xs-2"><span class="price fs16 color-orange">￥1589</span></div>
+                        <div class="search-detail col-xs-2"><span class="color9 fs12">已售出<span class="color3">80</span></span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="search-cell">
+                        <div class="search-img rel col-xs-3">
+                            <a href="" target="_blank"><img src="../../images/mall/goods-pic.jpg"></a>
+                        </div>
+                        <div class="search-tip col-xs-5"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+小户型客厅布艺沙发 2008</a></div>
+                        <div class="search-detail col-xs-2"><span class="price fs16 color-orange">￥1589</span></div>
+                        <div class="search-detail col-xs-2"><span class="color9 fs12">已售出<span class="color3">80</span></span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="search-cell">
+                        <div class="search-img rel col-xs-3">
+                            <a href="" target="_blank"><img src="../../images/mall/goods-pic.jpg"></a>
+                        </div>
+                        <div class="search-tip col-xs-5"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+小户型客厅布艺沙发 2008</a></div>
+                        <div class="search-detail col-xs-2"><span class="price fs16 color-orange">￥1589</span></div>
+                        <div class="search-detail col-xs-2"><span class="color9 fs12">已售出<span class="color3">80</span></span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="search-cell">
+                        <div class="search-img rel col-xs-3">
+                            <a href="" target="_blank"><img src="../../images/mall/goods-pic.jpg"></a>
+                        </div>
+                        <div class="search-tip col-xs-5"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+小户型客厅布艺沙发 2008</a></div>
+                        <div class="search-detail col-xs-2"><span class="price fs16 color-orange">￥1589</span></div>
+                        <div class="search-detail col-xs-2"><span class="color9 fs12">已售出<span class="color3">80</span></span></div>
+                    </div>
+                </li>
+                
+            </ul>
+            <div class="clear"></div>
+            <div class="s-page">
+        	<ul class="pagination">
+                <li><a href="#">上一页</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">下一页</a></li>
+             </ul>
+             <div class="clear"></div>
+        </div>
+        </div>
+    </div>
+    <div class="col-xs-3 new-goods">
+    	<div class="new-title">最新商品</div>
+        <ul>
+        	<li>
+            	<div class="new-cell">
+                    <div class="new-img rel">
+                        <a href="" target="_blank"><img src="../../images/mall/thenew.jpg"></a>
+                    </div>
+                    <div class="new-name"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+小户型客厅布艺沙发 2008</a></div>
+                    <div class="detail"><span class="price fs16">￥1589</span></div>
+                </div>
+            </li>
+            <li>
+            	<div class="new-cell">
+                    <div class="new-img rel">
+                        <a href="" target="_blank"><img src="../../images/mall/thenew.jpg"></a>
+                    </div>
+                    <div class="new-name"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+小户型客厅布艺沙发 2008</a></div>
+                    <div class="detail"><span class="price fs16">￥1589</span></div>
+                </div>
+            </li>
+            <li>
+            	<div class="new-cell">
+                    <div class="new-img rel">
+                        <a href="" target="_blank"><img src="../../images/mall/thenew.jpg"></a>
+                    </div>
+                    <div class="new-name"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+小户型客厅布艺沙发 2008</a></div>
+                    <div class="detail"><span class="price fs16">￥1589</span></div>
+                </div>
+            </li>
+            <li>
+            	<div class="new-cell">
+                    <div class="new-img rel">
+                        <a href="" target="_blank"><img src="../../images/mall/thenew.jpg"></a>
+                    </div>
+                    <div class="new-name"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+小户型客厅布艺沙发 2008</a></div>
+                    <div class="detail"><span class="price fs16">￥1589</span></div>
+                </div>
+            </li>
+            <li>
+            	<div class="new-cell">
+                    <div class="new-img rel">
+                        <a href="" target="_blank"><img src="../../images/mall/thenew.jpg"></a>
+                    </div>
+                    <div class="new-name"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+小户型客厅布艺沙发 2008</a></div>
+                    <div class="detail"><span class="price fs16">￥1589</span></div>
+                </div>
+            </li>
+            <li>
+            	<div class="new-cell">
+                    <div class="new-img rel">
+                        <a href="" target="_blank"><img src="../../images/mall/thenew.jpg"></a>
+                    </div>
+                    <div class="new-name"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+小户型客厅布艺沙发 2008</a></div>
+                    <div class="detail"><span class="price fs16">￥1589</span></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--最热特卖-->
+<div class="container mt30">
+    <div class="mall-title">
+        <div class="txt-l">最热特卖</div>
+    </div>
+    <div class="hostest-box">
+        <ul>
+            <li>
+                <div class="hostest-cell">
+                    <div class="hostest-img rel">
+                        <a href="" target="_blank"><img src="../../images/mall/thenew.jpg"></a>
+                    </div>
+                    <div class="hostest-name"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+    小户型客厅布艺沙发 2008</a></div>
+                    <div class="detail"><span class="price fs16">￥1589</span></div>
+                </div>
+            </li>
+            <li>
+                <div class="hostest-cell">
+                    <div class="hostest-img rel">
+                        <a href="" target="_blank"><img src="../../images/mall/thenew.jpg"></a>
+                    </div>
+                    <div class="hostest-name"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+    小户型客厅布艺沙发 2008</a></div>
+                    <div class="detail"><span class="price fs16">￥1589</span></div>
+                </div>
+            </li>
+            <li>
+                <div class="hostest-cell">
+                    <div class="hostest-img rel">
+                        <a href="" target="_blank"><img src="../../images/mall/thenew.jpg"></a>
+                    </div>
+                    <div class="hostest-name"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+    小户型客厅布艺沙发 2008</a></div>
+                    <div class="detail"><span class="price fs16">￥1589</span></div>
+                </div>
+            </li>
+            <li>
+                <div class="hostest-cell">
+                    <div class="hostest-img rel">
+                        <a href="" target="_blank"><img src="../../images/mall/thenew.jpg"></a>
+                    </div>
+                    <div class="hostest-name"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+    小户型客厅布艺沙发 2008</a></div>
+                    <div class="detail"><span class="price fs16">￥1589</span></div>
+                </div>
+            </li>
+            <li>
+                <div class="hostest-cell">
+                    <div class="hostest-img rel">
+                        <a href="" target="_blank"><img src="../../images/mall/thenew.jpg"></a>
+                    </div>
+                    <div class="hostest-name"><a href="" class="zone fs12" target="_blank">四格 上海转角沙发3人+贵妃位简约
+    小户型客厅布艺沙发 2008</a></div>
+                    <div class="detail"><span class="price fs16">￥1589</span></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--友情链接-->
+<div class="container mt35 furniture-box">
+    <div class="mall-title">
+        <div class="txt-l">友情链接 FRIENDLY LINK</div>
+    </div>
+	<div class="aalink fs12"> 
+		<a href="http://m.homekoo.com/" target="_blank">尚品宅配官网</a> | <a href="http://home.163.com/" target="_blank">网易家居</a> | <a href="http://www.TuManDuo.com" target="_blank">装修图满多</a> | <a href="https://www.eelly.com" target="_blank">衣联网</a> | <a href="http://www.tnc.com.cn/" target="_blank">面料网</a> | <a href="http://news.homekoo.com/jiaju" target="_blank">家具</a> | <a href="http://news.homekoo.com/jiajuzx" target="_blank">家居装修</a> | <a href="http://news.homekoo.com/" target="_blank">装修频道首页</a> | <a href="http://www.homekoo.com/shejishi/" target="_blank">设计师</a> | <a href="http://www.365azw.com/" target="_blank">装修</a> | <a href="http://hz.lianjia.com/" target="_blank">杭州二手房</a> | <a href="http://www.66zhuang.com" target="_blank">装修快车网</a> | <a href="http://watch.xbiao.com/" target="_blank">手表品牌排行榜</a> | <a href="http://www.b2b168.com/" target="_blank">八方资源网</a> | <a href="http://www.mayi.com" target="_blank">短租公寓</a> | <a href="http://www.17house.com/" target="_blank">装修网</a> | <a href="http://www.smm.cn" target="_blank">金属期货</a> | <a href="http://www.qqqnm.com/" target="_blank">海淘</a> | <a href="http://www.91lai.com/" target="_blank">返利网</a> | <a href="http://www.jiajuol.com" target="_blank">家居</a> | <a href="http://www.zjtcn.com/" target="_blank">工程造价</a> | <a href="http://bj.lianjia.com/" target="_blank">北京房产网</a> | <a href="http://post.smzdm.com/" target="_blank">购物攻略</a> | <a href="http://www.juanpi.com" target="_blank">品牌折扣</a> | <a href="http://tool.cncn.com/" target="_blank">欣欣百宝箱</a> | <a href="http://mydown.yesky.com/" target="_blank">软件下载</a> | <a href="http://www.shejiben.com/" target="_blank">室内设计</a> | <a href="http://www.cnhuadong.net/" target="_blank">华东在线</a> | <a href="http://www.zxdyw.com/" target="_blank">装修网</a> | <a href="http://www.zbj.com/" target="_blank">猪八戒网</a> | <a href="http://www.bidcenter.com.cn/" target="_blank">中国采招网</a> | <a href="http://www.ebrun.com/" target="_blank">电商新闻</a> | <a href="http://www.askci.com/" target="_blank">中商情报网</a> | <a href="http://www.aiuw.com" target="_blank">装修网</a> | <a href="http://www.jiuzheng.com/" target="_blank">装修网</a> | <a href="http://www.jiwu.com/" target="_blank">买房网</a> | <a href="http://www.oppein.cn/" target="_blank">家居商城</a> | <a href="http://www.s.cn" target="_blank">名鞋库</a> | <a href="http://www.wy100.com/" target="_blank">定制家具</a> | <a href="http://www.jieju.cn" target="_blank">卫浴网</a> | <a href="http://www.qianlima.com/" target="_blank">千里马招标网</a> | <a href="http://www.vmall.com/" target="_blank">华为商城</a> | <a href="http://www.zhe800.com/" target="_blank">折800</a> | <a href="http://shanghai.anjuke.com/" target="_blank">上海房产网</a> | <a href="http://www.ooopic.com/" target="_blank">我图网设计</a> | <a href="http://www.zhifang.com/" target="_blank">智房旅游地产</a> | <a href="http://www.bidchance.com/" target="_blank">中国招标网</a> | <a href="http://shike.gaotie.cn/" target="_blank">高铁时刻表</a> | <a href="http://365jilin.com/" target="_blank">吉和网</a> | <a href="http://tuku.51hejia.com" target="_blank">装修效果图</a> | <a href="http://www.zhulong.com" target="_blank">建筑</a> | <a href="http://www.to8to.com/" target="_blank">装修网</a> | <a href="http://www.zsezt.com/" target="_blank">装修设计网</a> | <span class="youqing_more"><a href="javascript:;" style="display: none;">更多&gt;&gt;</a></span>  
+	</div>
+</div>
+<!--新手帮助-->
+<div class="helper">
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <ul>
+                <li class="col-sm-3">
+                    <p>新手上路</p>
+                    <a rel="" href="" target="_blank">量尺送200元</a><br>
+                    <a rel="" href="" target="_blank">注册新用户</a><br>
+                    <a rel="" href="" target="_blank">了解产品工艺</a><br>
+                    <a rel="" href="" target="_blank">服务流程</a><br>
+                    <a rel="" href="" target="_blank">常见问题解答</a><br>
+                </li>
+                <li class="col-sm-3">
+                    <p>量房设计</p>
+                    <a rel="" href="" target="_blank">免费上门量尺设计</a><br>
+                    <a rel="" href="" target="_blank">电话预约</a><br>
+                    <a rel="" href="" target="_blank">在线咨询预约</a><br>
+                    <a rel="" href="" target="_blank">意向提交</a><br>
+                </li>
+                <li class="col-sm-3">
+                    <p>安全保障</p>
+                    <a rel="" href="" target="_blank">全国配送中心</a><br>
+                    <a rel="" href="" target="_blank">售后服务</a><br>
+                    <a href="" target="_blank">全国门店</a><br>
+                </li>
+                <li class="col-sm-3">
+                    <a target="_blank" href=""><p>招商加盟</p></a>
+                    <a target="_blank" href="" rel="nofollow">品牌实力</a><br>
+                    <a target="_blank" href="" rel="nofollow">互联网+模式</a><br>
+                    <a target="_blank" href="" rel="nofollow">加盟体系</a><br>
+                    <a target="_blank" href="" rel="nofollow">招商咨询</a>			
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</div>
+  <!--footer-->
+  <div class="footer mt25">
+  	<div class="container">
+        <div class="liner-nav">
+            <div class="nav-title">关于我们</div>
+            <ul>
+                <li><a href="" target="_blank">公司介绍</a></li>
+                <li><a href="" target="_blank">企业动态</a></li>
+                <li><a href="" target="_blank">联系我们</a></li>
+                <li><a href="" target="_blank">付款方式</a></li>
+            </ul>
+        </div>
+        <div class="liner-nav">
+            <div class="nav-title">我是业主</div>
+            <ul>
+                <li><a href="" target="_blank">找设计师</a></li>
+                <li><a href="" target="_blank">申请量房</a></li>
+                <li><a href="" target="_blank">申请报价</a></li>
+            </ul>
+        </div>
+        <div class="liner-nav">
+            <div class="nav-title">装修课堂</div>
+            <ul>
+                <li><a href="" target="_blank">装修日记</a></li>
+                <li><a href="" target="_blank">装修风水</a></li>
+                <li><a href="" target="_blank">装修知识</a></li>
+            </ul>
+        </div>
+        <div class="liner-nav liner-nav-kefu">
+            <div class="nav-title">联系客服</div>
+            <ul>
+                <li>周一至周日： 8：00-22：00</li>
+                <li>全国统一服务热线：</li>
+                <li>0311-00000000</li>
+                <li><a href="" class="connect" target="_blank">在线咨询</a></li>
+            </ul>
+        </div>
+        <div class="liner-nav">
+            <div class="nav-title">关注我们</div>
+            <ul>
+                <li><img src="../../images/sts_ewm.jpg"></li>
+            </ul>
+        </div>
+    </div>
+  </div>
+  <div class="footer-mianze">免责声明：本网站部分内容由用户自行上传，如权利人发现存在误传其作品情形，请及时与本站联系
+生态树 保留所有权利</div>
+<script src="../../Scripts/jquery.min.js"></script>
+<script src="../../Scripts/bootstrap.min.js"></script>
+<script src="../../Scripts/jquery.SuperSlide.2.1.1.js"></script> 
+<script type="text/javascript" src="../../Scripts/jquery.flexisel.js"></script>
+<script type="text/javascript" src="../../Scripts/mall/search.js"></script>
+</body>
+</html>

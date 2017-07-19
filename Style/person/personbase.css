@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* 个人中心 */
+.s-header .icon-reorder{display:none}
+.s-banner{position:relative; height:150px; background:url(../../images/user-banner.jpg) no-repeat top center;}
+@media screen and (max-width: 520px){
+	.s-banner{display:none;}
+	.s-banner .col-xs-6{width: 100%;}
+	.s-header .icon-reorder{display:block;}
+	.s-header .nav{display:none;}
+	.s-header .col-sm-7{width:60%; float:left}
+	.s-header .col-sm-5{width:40%; float:left}
+	.s-header .col-sm-5 i.icon-reorder{line-height:60px; font-size:30px;}
+}
+.user-box{margin-top:53px;}
+.user-box img{width:97px; height:97px;}
+.user-pic{width:97px; height:97px; border-radius:97px; margin-top:11px; float:left;}
+.user-box .mt{margin-top:65px; color:#fff; line-height:25px;}
+.renzheng,.unrenzheng{padding-left:10px;}
+@media screen and (max-width: 520px){
+	.user-box .mt{width: 60%}
+	.user-box .fs18{font-size: 14px;}
+	.renzheng,.unrenzheng{padding-left:0px;}
+}
+.go-renzheng{padding-left:20px; color:#fff;}
+.go-renzheng:hover{color:#fff;}
+.user-message{color:#fff; padding-top:120px;}
+.user-message span{padding-left:10px;}
+@media screen and (max-width: 520px){
+	.user-box .mt{margin-top:17px; padding-left: 10px}
+	.renzheng.mt,.unrenzheng.mt{margin-top:0px;}
+	.s-banner .col-xs-6.user-message{position:absolute; top: 125px; left: 98px; width: 68%; padding-top:0px; text-align: left;}
+}
+.user-title{background:#75b845; height:46px; padding-left:30%; line-height:46px; color:#fff;}
+.user-right-box{border:1px solid #ddd; padding:10px 10px 30px 10px;margin-bottom:30px; min-height:500px;}
+.user-nav{border-left:1px solid #ddd;border-right:1px solid #ddd;border-bottom:1px solid #ddd; padding-top:10px; padding-bottom:20px;}
+.user-nav li{ height:39px; padding-left:30%; line-height:39px;}
+.user-nav li a{color:#333;}
+.user-nav li.active,.user-nav li:hover{background:#e5e5e5; font-weight:bold; border-left:2px solid #75b845; margin-left:-2px;}
+.user-nav li.active a,.user-nav li:hover a{color:#75b845;}
+@media screen and (max-width: 520px){
+	.user-left-box{display: none;}
+	.user-right-box{width: 100%; border:none; margin-top:-50px;}
+}
+/*我的装修*/
+.decorate{width:150px; height:150px;}
+.decorate img{width:100%; height:100%;}
+.deco-detail{line-height:29px; padding-left:19px; max-width:350px;}
+.lookzone{position:absolute; right:15px; bottom:16px;}
+.user-right-box li{position:relative; border-bottom:1px dashed #ddd; overflow:hidden; padding:16px 0;}
+.user-right-box li:last-child{border-bottom:none;}
+@media screen and (max-width: 520px){
+	.deco-detail{padding-left:0px; padding-top: 5px;}
+}
+/*我的共享空间*/
+.myshare{padding-left:30%; padding-bottom:50px; overflow:hidden;}
+.myshare .deco-detail{ padding-left:0;}
+.myshare .col-md-3{padding-left:0; padding-right:0;}
+.btn-share{padding:10px 20px; margin-top:-20px;}
+/*我的余额*/
+.mybalance{margin-top:50px;}
+.mybalance .form-group{ line-height:30px;}
+.mybalance .btn-green,.mybalance .btn-orange{margin-left:10px; padding:5px 25px;}
+.mybalance .form-group{ overflow:hidden; margin-bottom:19px;}
+.mybalance .form-group input[type=text]{width:214px; height:30px; border-radius:0;}
+.mybalance .alltime{margin-left:10px;margin-top:5px; line-height:20px;}
+.mybalance .form-group input[type=text].codetext{width:107px;}
+.mybalance .form-group .codebtn{width:97px; padding:3px 10px;}
+@media screen and (max-width: 520px){
+	.myshare{ padding-left:10%;}
+	.myshare .col-xs-8{width:90%;}
+	.mybalance .row{margin:0;}
+	.mybalance .col-xs-3{width: 30%; padding-right: 0;}
+	.mybalance .col-xs-9{width: 70%; padding-left: 0;}
+	.mybalance .col-xs-9.house-color{}
+	.mybalance .form-group input[type=text]{width:80%; height:30px; border-radius:0;}
+	.mybalance .col-xs-6{width:100%; text-align:left; margin-bottom:20px;}
+	.mybalance .col-xs-offset-3{ text-align:center; margin-left:5%;}
+	.mybalance .col-xs-offset-3.col-xs-9{width:90%; line-height:18px;}
+	.realname{margin-top:-5px;}
+	.realname .form-group{margin-bottom:1px;}
+	.realname .date .form-control{width:150px !important;}
+	.realname .btn-orange{ margin-top:20px;}
+}
+/*我的实名认证*/
+.file-preview{border-color:#fff;}
+.file-error-message{background-color:#fff;}
+/*我的银行卡*/
+.mycard{padding:14px 15px 0;}
+.mycard li{width:211px; height:138px; display:block; float:left; border-radius:10px; box-shadow:0 0 6px #999; padding:5px 5px; margin:0 16px 16px 0; border-bottom:0;}
+.mycard .top{border-bottom:1px solid #ddd; padding:6px 5px; overflow:hidden}
+.mycard li .top img{ vertical-align:top; margin-top:3px; width:16px; height:16px; margin-right:5px;}
+.mycard li .card-contral{overflow:hidden; padding-top:10px;}
+.card-bg{font-size:24px; color:#ccc; text-align:center;}
+.add-card{text-align:center; padding-top:30px;}
+.add-card img{width:51px; height:52px;}
+
+.judge,.addtel{margin-left:20px;}
+.right,.wrong{height:30px; line-height:30px;}
+
+/*上传作品*/
+.house-color input[type=checkbox]{ margin:0px 0 0 10px; vertical-align:middle;}
+.mybalance .form-group select{width:107px; height:30px; line-height:30px; padding-top:2px; border-radius:0;}
+.mybalance .form-group input[type=text].text1{width:97px; margin-left:10px;}
+.add-design{display:none;}
+.add-design:first-child{display:block;}
+.addother{cursor:pointer;}
+@media screen and (max-width: 520px){
+	.mybalance .form-group input[type=text].text1{width:67px; }
+	.mybalance .form-group select{width:87px; }
+
+}
+/*上传材料*/
+.material li,.material li:last-child{border-bottom:1px solid #ddd; padding-bottom:16px;}
+.search-text{height:42px; line-height:42px; border:1px solid #75b845;}
+a [class^="icon-"].icon-search-b{ width:25px; height:22px; display:inline-block; background:url(../../images/icon.png) no-repeat -59px -32px; margin:11px 0 0 10px;}
+.search-btn{position:absolute; right:15px; top:0px; display:block; width:65px; height:42px;}
+.user-search-box{margin-bottom:120px;}
+.user-search-list{margin-top:50px;}
+.user-search-list .col-xs-3{padding:0; width:25%;}
+.user-search-list .col-xs-4{padding:0; width:33.33333%;}
+.user-search-list li{margin-bottom:16px;}
+
+.m-choose{width:100%; overflow:hidden; line-height:30px; padding:6px 10px;}
+.m-choose select,.m-choose input{height:30px; border-radius:0;}
+.m-choose select{margin-right:6px;}
+.m-add{margin-bottom:15px;}
+.pagination{
+	position: absolute;
+	z-index: 20;
+	right: 50%;
+	bottom: 25px;
+	margin: 0 auto;
+	margin-right: -20px
+}
+@media screen and (max-width: 520px){
+	.material li .col-xs-3{width: 50%}
+	.material li .col-xs-3:nth-child(2){text-align: right;}
+	.material li .col-xs-6{width: 100%}
+	.user-right-box button[type=submit]{margin-left: -35px;}
+	.user-search-box .col-xs-6{width: 100%;}
+	.user-search-box .col-xs-offset-3{margin-left: 0px;}
+	.user-search-list li.col-xs-3{width: 100%;}
+	.pagination li:nth-child(5),.pagination li:nth-child(6),.pagination li:nth-child(7){display: none;}
+	.s-page .pagination {margin-right: -105px;}
+}
+/*我的设计*/
+.design-control{height:150px;}
+.design-num{top:0px; right:0px;}
+.design-num span{padding-left:20px; display:inline-block;}
+.design-num span:first-child{padding:0;}
+.btn-modify{bottom:25px; right:0px;}
+@media screen and (max-width: 520px){
+	
+}

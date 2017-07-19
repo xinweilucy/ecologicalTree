@@ -1,0 +1,362 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>生态树商城-工单页</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 引入 Bootstrap -->
+<link href="../Style/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../Style/font-awesome.min.css">
+<link href="../Scripts/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+<link href="../Style/reset.css" rel="stylesheet">
+<link href="../Style/main.css" rel="stylesheet">
+<link href="../Style/detail.css" rel="stylesheet">
+<!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+<!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+<!--[if lt IE 9]>
+ <script src="../Scripts/html5shiv.js"></script>
+ <script src="../Scripts/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!--顶部-->
+<div class="s-top">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-sm-6 color6">家装就选生态树！</div>
+            <div class="col-sm-6 text-right">
+            	<a href="login.html">登录</a><span> | </span><a href="register.html">注册</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--头部-->
+<div class="s-header s-header-liner">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-sm-7"><a href="index.html"><img src="../images/logo.png"></a></div>
+            <div class="col-sm-5 text-right">
+            	<ul class="nav nav-pills nav-justified mt15">
+                	<li class="active"><a href="index.html" target="_blank">我要装修</a></li>
+                    <li><a href="myLoan.html" target="_blank">我要贷款</a></li>
+                    <li><a href="" target="_blank">建材商城</a></li>
+                    <li><a href="mall/mall.html" target="_blank">家具商城</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+	<div class="s-road"><a href="index.html">首页</a> > <a href="">我要装修</a> > <a href="">我的工单</a></div>
+</div>
+<div class="container mt5">
+    <div class="col-md-12">
+        <div class="s-condition mt15">
+        	<form class="form-horizontal" role="form">
+              <div class="form-group">
+                <label for="firstname" class="col-sm-2 control-label">面&emsp;积：</label>
+                <div class="col-sm-3">
+                  <input type="text" class="form-control" id="firstname">
+                </div>
+                <div class="col-sm-4">
+                  <label for="" class="control-label">平米</label>
+                </div>
+                <div class="col-md-3 text-right fr">
+                	<div class="fr"><a href="javascript:;" class="color3"><i class="free-measure"></i> 免费量房</a><a href="javascript:;" class="color3"><i class="refresh"></i> 更新</a></div>
+                </div>
+              </div>
+              <div class="form-group" id="condition" >
+              	 <div class="form-group">
+                 <div class="col-sm-4">
+                    <label for="firstname" class="col-xs-2 control-label">卧&emsp;室：</label>
+                    <div class="col-xs-7">
+                      <input type="text" class="form-control" id="firstname">
+                    </div>
+                    <label class="control-label">平米</label>
+                 </div>
+                 <div class="col-sm-4">
+                    <label for="firstname" class="col-xs-2 control-label">客&emsp;厅：</label>
+                    <div class="col-xs-7">
+                      <input type="text" class="form-control" id="firstname">
+                    </div>
+                    <label class="control-label">平米</label>
+                 </div>
+                 <div class="col-sm-4">
+                    <label for="firstname" class="col-xs-2 control-label">书&emsp;房：</label>
+                    <div class="col-xs-7">
+                      <input type="text" class="form-control" id="firstname">
+                    </div>
+                    <label class="control-label">平米</label>
+                 </div>
+                 <div class="col-sm-4">
+                    <label for="firstname" class="col-xs-2 control-label">儿童房：</label>
+                    <div class="col-xs-7">
+                      <input type="text" class="form-control" id="firstname">
+                    </div>
+                    <label class="control-label">平米</label>
+                 </div>
+                 <div class="col-sm-4">
+                    <label for="firstname" class="col-xs-2 control-label">厨&emsp;房：</label>
+                    <div class="col-xs-7">
+                      <input type="text" class="form-control" id="firstname">
+                    </div>
+                    <label class="control-label">平米</label>
+                 </div>
+                 <div class="col-sm-4">
+                    <label for="firstname" class="col-xs-2 control-label">卫生间：</label>
+                    <div class="col-xs-7">
+                      <input type="text" class="form-control" id="firstname">
+                    </div>
+                    <label class="control-label">平米</label>
+                 </div>
+                  <div class="col-sm-4">
+                    <label for="firstname" class="col-xs-2 control-label">阳&emsp;台：</label>
+                    <div class="col-xs-7">
+                      <input type="text" class="form-control" id="firstname">
+                    </div>
+                    <label class="control-label">平米</label>
+                 </div>
+                 <div class="col-sm-4">
+                    <label for="firstname" class="col-xs-2 control-label">新&emsp;建：</label>
+                    <div class="col-xs-7">
+                      <input type="text" class="form-control" id="firstname">
+                    </div>
+                    <label class="control-label">平米</label>
+                 </div>
+                 
+                 </div>
+              </div>
+            </form>
+        </div>
+        <div class="goods-list">
+        	<ul>
+            	<li>
+                	<div class="col-xs-3">
+                    	<input type="checkbox" > <img width="76px" height="76px" src="../images/dizhuan.jpg">
+                    </div>
+                    <div class="col-xs-3">
+                    	<div class="mt5 ellipsis">主材地砖  马可波罗地砖</div> <div class="ellipsis">尺寸：80*80</div>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                    	<span>50*1000=15000</span><br>
+                        <a href="" class="btn-change" target="_blank">更换</a>
+                    </div>
+                </li>
+                <li>
+                	<div class="col-xs-3">
+                    	<input type="checkbox" > <img width="76px" height="76px" src="../images/dizhuan.jpg">
+                    </div>
+                    <div class="col-xs-3">
+                    	<div class="mt5 ellipsis">主材地砖  马可波罗地砖</div> <div class="ellipsis">尺寸：80*80</div>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                    	<span>50*1000=15000</span><br>
+                        <a href="" class="btn-change" target="_blank">更换</a>
+                    </div>
+                </li>
+                <li>
+                	<div class="col-xs-3">
+                    	<input type="checkbox" > <img width="76px" height="76px" src="../images/dizhuan.jpg">
+                    </div>
+                    <div class="col-xs-3">
+                    	<div class="mt5 ellipsis">主材地砖  马可波罗地砖</div> <div class="ellipsis">尺寸：80*80</div>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                    	<span>50*1000=15000</span><br>
+                        <a href="" class="btn-change" target="_blank">更换</a>
+                    </div>
+                </li>
+                <li>
+                	<div class="col-xs-3">
+                    	<input type="checkbox" > <img width="76px" height="76px" src="../images/dizhuan.jpg">
+                    </div>
+                    <div class="col-xs-3">
+                    	<div class="mt5 ellipsis">主材地砖  马可波罗地砖</div> <div class="ellipsis">尺寸：80*80</div>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                    	<span>50*1000=15000</span><br>
+                        <a href="" class="btn-change" target="_blank">更换</a>
+                    </div>
+                </li>
+                <li>
+                	<div class="col-xs-3">
+                    	<input type="checkbox" > <img width="76px" height="76px" src="../images/dizhuan.jpg">
+                    </div>
+                    <div class="col-xs-3">
+                    	<div class="mt5 ellipsis">主材地砖  马可波罗地砖</div> <div class="ellipsis">尺寸：80*80</div>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                    	<span>50*1000=15000</span><br>
+                        <a href="" class="btn-change" target="_blank">更换</a>
+                    </div>
+                </li>
+                <li>
+                	<div class="col-xs-3">
+                    	<input type="checkbox" > <img width="76px" height="76px" src="../images/dizhuan.jpg">
+                    </div>
+                    <div class="col-xs-3">
+                    	<div class="mt5 ellipsis">主材地砖  马可波罗地砖</div> <div class="ellipsis">尺寸：80*80</div>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                    	<span>50*1000=15000</span><br>
+                        <a href="" class="btn-change" target="_blank">更换</a>
+                    </div>
+                </li>
+                <li>
+                	<div class="col-xs-3">
+                    	<input type="checkbox" > <img width="76px" height="76px" src="../images/dizhuan.jpg">
+                    </div>
+                    <div class="col-xs-3">
+                    	<div class="mt5 ellipsis">主材地砖  马可波罗地砖</div> <div class="ellipsis">尺寸：80*80</div>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                    	<span>50*1000=15000</span><br>
+                        <a href="" class="btn-change" target="_blank">更换</a>
+                    </div>
+                </li>
+                <li>
+                	<div class="col-xs-3">
+                    	<input type="checkbox" > <img width="76px" height="76px" src="../images/dizhuan.jpg">
+                    </div>
+                    <div class="col-xs-3">
+                    	<div class="mt5 ellipsis">主材地砖  马可波罗地砖</div> <div class="ellipsis">尺寸：80*80</div>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                    	<span>50*1000=15000</span><br>
+                        <a href="" class="btn-change" target="_blank">更换</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="col-md-12 mt15 s-address">
+                <div class="fr">
+                    <span class="fl zone-txt lh35">送货地址 : </span>
+                    <select class="form-control fl" id="province">
+                       <option>河北省</option>
+                       <option>山东省</option>
+                       <option>北京</option>
+                    </select>
+                    <select class="form-control fl"  id="city">
+                       <option>石家庄市</option>
+                       <option>邯郸市</option>
+                       <option>沧州市</option>
+                    </select>
+                    <select class="form-control fl" id="zone">
+                       <option>裕华区</option>
+                       <option>新华区</option>
+                       <option>长安区</option>
+                    </select>
+                    <input type="text" class="form-control fl" placeholder="请输入详细地址" >
+                </div>
+            </div>
+            <div class="col-md-12 mt15 s-address">
+                <div class="fr">
+                    <span class="fl zone-txt lh35">联系方式 : </span><input type="text" class="form-control fl" placeholder="请输入联系方式" >
+                </div>
+            </div>
+            <div class="col-md-12 mt15 mb30" style="margin-left:15px;">
+            	<div class="fr">
+                    <span class="fl lh35">开工日期：</span>
+                    <div class="input-group date form_datetime fl" style="width:200px;" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input1">
+                        <input class="form-control" size="16" type="text" value="" readonly>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+                    </div>
+                    <input type="hidden" id="dtp_input1" value="2017-07-09" />
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="submit-order rel">
+            	<div class="col-xs-3">
+                    	<input type="checkbox" > 全选
+                    </div>
+                    <div class="col-xs-3">
+                    	预计工期：15天
+                    </div>
+                    <div class="col-xs-6 text-right">
+                    	<span class="color-orange total">合计：￥151000.00</span>
+                        <a class="add-goods fs18" href="javascript:;">支付定金</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer-->
+<div class="footer mt25">
+<div class="container">
+    <div class="liner-nav">
+        <div class="nav-title">关于我们</div>
+        <ul>
+            <li><a href="" target="_blank">公司介绍</a></li>
+            <li><a href="" target="_blank">企业动态</a></li>
+            <li><a href="" target="_blank">联系我们</a></li>
+            <li><a href="" target="_blank">付款方式</a></li>
+        </ul>
+    </div>
+    <div class="liner-nav">
+        <div class="nav-title">我是业主</div>
+        <ul>
+            <li><a href="" target="_blank">找设计师</a></li>
+            <li><a href="" target="_blank">申请量房</a></li>
+            <li><a href="" target="_blank">申请报价</a></li>
+        </ul>
+    </div>
+    <div class="liner-nav">
+        <div class="nav-title">装修课堂</div>
+        <ul>
+            <li><a href="" target="_blank">装修日记</a></li>
+            <li><a href="" target="_blank">装修风水</a></li>
+            <li><a href="" target="_blank">装修知识</a></li>
+        </ul>
+    </div>
+    <div class="liner-nav liner-nav-kefu">
+        <div class="nav-title">联系客服</div>
+        <ul>
+            <li>周一至周日： 8：00-22：00</li>
+            <li>全国统一服务热线：</li>
+            <li>0311-00000000</li>
+            <li><a href="" class="connect" target="_blank">在线咨询</a></li>
+        </ul>
+    </div>
+    <div class="liner-nav">
+        <div class="nav-title">关注我们</div>
+        <ul>
+            <li><img src="../images/sts_ewm.jpg"></li>
+        </ul>
+    </div>
+</div>
+</div>
+<div class="footer-mianze">免责声明：本网站部分内容由用户自行上传，如权利人发现存在误传其作品情形，请及时与本站联系
+生态树 保留所有权利</div>
+<div class="loan">
+	<a href="myLoan.html"><i></i>装修贷款</a>
+</div>
+<div class="online">
+	<a href="" target="_blank"><i></i>在线客服</a>
+</div>
+<!--返回顶部-->
+<div class="back-top">
+	<i></i>返回顶部
+</div>
+<script src="../Scripts/jquery.min.js"></script>
+<script src="../Scripts/bootstrap.min.js"></script>
+<script src="../Scripts/jquery.jqzoom.js"></script>
+<script src="../Scripts/jqzoom.js"></script>
+<script src="../Scripts/detail.js"></script>
+<script type="text/javascript" src="../Scripts/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+<script type="text/javascript" src="../Scripts/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+<script type="text/javascript">
+    $('.form_datetime').datetimepicker({
+        language:  'zh-CN',
+		minView: "month",
+        weekStart: 1,
+        todayBtn:  1,
+		autoclose: 1,
+		todayHighlight: 1,
+		startView: 2,
+		forceParse: 0,
+        showMeridian: 1,
+		pickerPosition: 'bottom-left'
+    });
+</script>
+</body>
+</html>

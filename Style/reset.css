@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+body{ background:#fff; font-family:Microsoft Yahei; font-size:14px; line-height:1.5; color:#333;}
+@media all and (max-width: 480px)  
+{
+	body{font-size:1.3em;}
+}
+.mt5{ margin-top:5px}
+.mt10{ margin-top:10px}
+.mt15{ margin-top:15px}
+.mt20{ margin-top:20px}
+.mt25{ margin-top:25px}
+.mt35{ margin-top:35px}
+.mt50{ margin-top:50px}
+.mb10 {margin-bottom: 10px;}
+.mb30 {margin-bottom: 30px;}
+.mb50 {margin-bottom: 50px;}
+
+
+.lh100{ line-height:100%}
+.lh120{ line-height:120%}
+.lh150{ line-height:150%}
+.lh180{ line-height:180%}
+.lh200{ line-height:200%}
+.lh30{ line-height:30px}
+.lh35{ line-height:35px}
+
+
+.fs12 { font-size:12px}
+.fs14 { font-size:14px}
+.fs16 { font-size:16px}
+.fs18 { font-size:18px}
+.fs20 { font-size:20px}
+
+.t2em{ text-indent:2em}
+.fl { float:left;}
+.fr { float:right}
+
+.fix:after {
+	display: block;
+	content: '';
+	clear: both;
+	visibility: hidden
+}
+.color9 { color:#999;}
+.color6 { color:#666;}
+.color3 { color:#333;}
+.color-green{color:#75b845;}
+.color-orange{color:#ff4400;}
+.bgfff{ background:#fff}
+
+.rel{ position:relative}
+.abs{ position:absolute}
+
+
+label{ font-weight:normal}
+a { color:#666}
+a:hover,a:focus { color:#666; text-decoration:none}
+ul, li { list-style:none; margin:0; padding:0}
+em { font-style:normal;}
+.blue, a.blue{color:#5B99E7}
+a.blue:hover{ color:#7BADEB}
+.orange, a.orange{ color:#FF7F08}
+.red, a.red{ color:#F00}
+.ellipsis { display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+
+.clearfix:after { 
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {display: inline-block;}
+.clear {
+clear: both;
+height: 0;
+line-height: 0;
+font-size: 0;
+}
+
+.btn-orange{ background:#ff4400; border:1px solid #ff4400; color:#fff;border-radius:0; min-width:80px;}
+.btn-orange:focus,.btn-orange:hover,.btn-orange:visited{ background:#ff4400; border:1px solid #ff4400; color:#fff;}
+.btn-gry{ background:#999; border:1px solid #999; color:#fff;border-radius:0; min-width:80px; padding:5px 30px;}
+.btn-gry:focus,.btn-gry:hover,.btn-gry:visited{ background:#999; border:1px solid #999; color:#fff;}
+
+.btn-yellow{ background:#fa9600; border:1px solid #fa9600; color:#fff;border-radius:5px;min-width:80px;}
+.btn-yellow:focus,.btn-yellow:hover,.btn-yellow:visited{ background:#fa9600; border:1px solid #fa9600; color:#fff;}
+.btn-green{ background:#75b845; border:1px solid #75b845; color:#fff; border-radius:0;min-width:80px;}
+.btn-green:focus,.btn-green:hover,.btn-green:visited{ background:#75b845; border:1px solid #75b845; color:#fff;border-radius:0;}
+.btn-change{background:#75b845; padding:5px 30px; color:#fff; border-radius:0;min-width:80px;}

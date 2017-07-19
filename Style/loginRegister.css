@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* 顶部导航 */
+.top-nav{}
+.top-nav li{float:left; padding-right:10px;}
+.top-nav li a:hover{color:#75b845;}
+/*登录注册页面*/
+.login-reg{margin-bottom:40px;}
+.login-title{ position:relative; z-index:2;width:134px; height:42px; background:#fff; text-align:center; line-height:42px; border-top:2px solid #75b845; border-left:1px solid #ddd;border-right:1px solid #ddd; margin-bottom:-1px;}
+.login-box{border:1px solid #ddd; padding:104px 0;}
+.login-form{width:80%; margin:0 auto;}
+@media all and (max-width:997px){
+	.login-form{width:90%;}
+}
+.login-form .form-control{height:39px; border-radius:0;}
+.btn-login{ height:39px; background:#75b845; border-radius:0; color:#fff;}
+.btn-login:hover{background:#8dd559;color:#fff;}
+.forget-pass{line-height:35px; margin:0; padding-left:0;}
+.change-box{margin-top:42px; padding:25px 0 25px 20px; line-height:40px;}
+.change-box,.enter-box{border:1px solid #ddd;}
+.enter-box img{width:100%;}
+.login-reg .col-xs-3{padding-left:0px;}
+.btn-go{background:#8dd559; color:#fff; padding:5px 10px;border-radius:0; margin-left:10px;}
+.btn-go:hover{background:#8dd559; color:#fff;}
+.right,.wrong{ line-height:39px; height:39px; display:none;}
+.right .right-icon{width:14px; height:14px; display:inline-block; background:url(../images/right-wrong-icon.png) no-repeat 0 center; margin:9px 0 0 -15px;}
+.wrong .wrong-icon{width:14px; height:14px; display:inline-block; background:url(../images/right-wrong-icon.png) no-repeat -15px center; vertical-align:middle; margin:-5px 0 0 -15px;}
+
+.btn-yzm{height:39px;background:#fa9600;border-radius:0; color:#fff;}
+.btn-yzm:hover{height:39px;background:#fa9600;border-radius:0; color:#fff;}

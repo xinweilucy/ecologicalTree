@@ -1,0 +1,705 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>生态树商城</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 引入 Bootstrap -->
+<link href="../../Style/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../../Style/font-awesome.min.css">
+<link href="../../Style/reset.css" rel="stylesheet">
+<link href="../../Style/main.css" rel="stylesheet">
+<link href="../../Style/mall/mall.css" rel="stylesheet">
+<!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+<!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+<!--[if lt IE 9]>
+ <script src="../Scripts/html5shiv.js"></script>
+ <script src="../Scripts/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!--顶部-->
+<div class="s-top">
+	<div class="container">
+    	<div class="row">
+            <div class="col-sm-12 text-right">
+            	<a href="login.html">登录</a><span> | </span><a href="register.html">注册</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--头部-->
+<div class="s-header">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-sm-3 mt10"><a href="index.html"><img src="../../images/mall/malllogo.png"></a></div>
+            <div class="col-sm-4 mt15">
+                <input type="text" class="form-control search-text" placeholder="搜索并添加材料" >
+                <a href="javascript:;" class="search-btn"><i class="icon-search-b color-green fs20"></i></a>
+            </div>
+            <div class="col-sm-5 text-right">
+            	<ul class="nav nav-pills nav-justified mt15">
+                	<li class="active"><a href="index.html" target="_blank">我要装修</a></li>
+                    <li><a href="myLoan.html" target="_blank">我要贷款</a></li>
+                    <li><a href="" target="_blank">建材商城</a></li>
+                    <li><a href="mall/mall.html" target="_blank">家具商城</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="rel banner-nav">
+    <div class="container rel">
+        <div class="nav-container">
+            <div class="row">
+                <div class="col-xs-7" style="height:35px;">
+                    <div class="banner-nav-title">家具分类</div>
+                    <div class="banner-nav-list rel">
+                        <ul>
+                            <li>
+                                <div class="classify-name"><i class="icon icon-living"></i>客厅家具</div>
+                                <div class="classify fs12"><a href="">沙发</a>  <a href="">茶几</a>  <a href="">架类</a>  <a href="">鞋柜</a>  <a href="">电视
+    柜</a>  <a href="">换鞋凳</a>  <a href="">隔厅柜/玄关柜</a></div>
+                                <div class="open-classify">
+                                    <ul>
+                                        <li>
+                                            <div class="classify-text"><a href="" class="color-green" >沙发</a></div>
+                                            <div class="classify-content fs12"><a href="">布艺沙发</a> <a href="">皮沙发</a> <a href="">实木沙发</a> <a href="">皮布结合沙发</a></div>
+                                        </li>
+                                        <li>
+                                            <div class="classify-text"><a href="" class="color-green" >客厅柜类</a></div>
+                                            <div class="classify-content fs12"><a href="">电视柜</a> <a href="">隔厅柜/玄关柜</a> <a href="">酒柜</a> </div>
+                                        </li>
+                                        <li>
+                                            <div class="classify-text"><a href="" class="color-green" >客厅架/几/其他</a></div>
+                                            <div class="classify-content fs12"><a href="">搁架/衣帽架/博古架</a> <a href="">茶几</a> <a href="">边几/角几</a> <a href="">换鞋凳</a> <a href="">客厅套件</a></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="classify-name"><i class="icon icon-bedroom"></i>卧室家具</div>    
+                                <div class="classify fs12"><a href="">床</a>  <a href="">床垫</a>  <a href="">床头柜</a>  <a href="">衣柜/衣帽间</a>  <a href="">斗柜</a>  <a href="">梳妆台</a>  </div>
+                                <div class="open-classify">
+                                    <ul>
+                                        <li>
+                                            <div class="classify-text"><a href="" class="color-green" >床类</a></div>
+                                            <div class="classify-content fs12"><a href="">实木床</a> <a href="">板式床</a> <a href="">布艺床</a> <a href="">皮艺床</a></div>
+                                        </li>
+                                        <li>
+                                            <div class="classify-text"><a href="" class="color-green" >床垫</a></div>
+                                            <div class="classify-content fs12"><a href="">弹簧床垫</a> <a href="">乳胶床垫</a> <a href="">天然棕垫</a> </div>
+                                        </li>
+                                        <li>
+                                            <div class="classify-text"><a href="" class="color-green" >卧室柜类/桌类</a></div>
+                                            <div class="classify-content fs12"><a href="">储藏柜</a> <a href="">斗柜</a> <a href="">床头柜</a> <a href="">电视柜</a> <a href="">衣柜/衣帽间</a> <a href="">梳妆台</a></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="classify-name"><i class="icon icon-dining"></i>餐厅家具</div>
+                                <div class="classify fs12"><a href="">餐桌</a>  <a href="">餐椅</a>  <a href="">酒柜</a>  <a href="">餐柜</a>  <a href="">餐厅套件</a>  </div>
+                                <div class="open-classify">
+                                    <ul>
+                                        <li>
+                                            <div class="classify-text"><a href="" class="color-green" >餐桌椅</a></div>
+                                            <div class="classify-content fs12"><a href="">餐桌</a> <a href="">餐椅</a> <a href="">餐厅套件</a> </div>
+                                        </li>
+                                        <li>
+                                            <div class="classify-text"><a href="" class="color-green" >餐厅柜类</a></div>
+                                            <div class="classify-content fs12"><a href="">餐边柜</a> <a href="">酒柜</a> </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="classify-name"><i class="icon icon-study"></i>书房家具</div>
+                                <div class="classify fs12"><a href="">书柜</a>  <a href="">书桌</a>  <a href="">休闲沙发</a>  <a href="">电脑椅</a>  <a href="">电脑桌</a>  </div>
+                                <div class="open-classify">
+                                    <ul> 
+                                        <li>
+                                            <div class="classify-text"><a href="" class="color-green" >书房家具</a></div>
+                                            <div class="classify-content fs12"><a href="">休闲沙发</a> <a href="">书桌</a> <a href="">电脑椅</a> <a href="">书房套件</a> </div>
+                                        </li>
+                                        <li>
+                                            <div class="classify-text"><a href="" class="color-green" >客厅柜类</a></div>
+                                            <div class="classify-content fs12"><a href="">电视柜</a> <a href="">隔厅柜/玄关柜</a> <a href="">酒柜</a> </div>
+                                        </li>
+                                        <li>
+                                            <div class="classify-text"><a href="" class="color-green" >客厅架/几/其他</a></div>
+                                            <div class="classify-content fs12"><a href="">搁架/衣帽架/博古架</a> <a href="">茶几</a> <a href="">边几/角几</a> <a href="">换鞋凳</a> <a href="">客厅套件</a></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="classify-name"><i class="icon icon-decoration"></i>软装饰品</div>
+                                <div class="classify fs12"><a href="">装饰画/墙贴/壁纸</a>  <a href="">灯具灯饰</a>  <a href="">窗帘窗饰</a>  <a href="">智能家居</a>  <a href="">生活家电</a>  </div>
+                                <div class="open-classify">
+                                    <ul>
+                                        <li>
+                                            <div class="classify-text"><a href="" class="color-green" >软装饰品</a></div>
+                                            <div class="classify-content fs12"><a href="">有框画</a> <a href="">无框画</a> <a href="">照片墙</a> <a href="">壁纸</a></div>
+                                        </li>
+                                        <li>
+                                            <div class="classify-text"><a href="" class="color-green" >灯具灯饰</a></div>
+                                            <div class="classify-content fs12"><a href="">灯带/吊灯/筒灯/射灯</a> </div>
+                                        </li>
+                                        <li>
+                                            <div class="classify-text"><a href="" class="color-green" >窗帘窗饰</a></div>
+                                            <div class="classify-content fs12"><a href="">成品窗帘窗饰</a> </div>
+                                        </li>
+                                        <li>
+                                            <div class="classify-text"><a href="" class="color-green" >智能家居</a></div>
+                                            <div class="classify-content fs12"><a href="">智能家居/其他</a> </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-5">
+                    <div class="banner-right-box">
+                        <div class="right-top">
+                            <ul>
+                                <li>
+                                    <i class="icon icon-zheng"></i><br>正品保证
+                                </li>
+                                <li>
+                                    <i class="icon icon-xian"></i><br>先行赔付
+                                </li>
+                                <li>
+                                    <i class="icon icon-jiage"></i><br>价格特搜
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-content">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                            <img src="../../images/mall/right1.jpg">
+                                        <div class="ellipsis">床品四件套</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                            <img src="../../images/mall/right2.jpg">
+                                        <div class="ellipsis">钢化玻璃饭盒</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                            <img src="../../images/mall/right3.jpg">
+                                        <div class="ellipsis">布艺沙发</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                            <img src="../../images/mall/right4.jpg">
+                                        <div class="ellipsis">法兰绒毯子</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="focus" class="mt50">
+        <div class="container"> <span style="opacity: 0.5; display: none;" class="prev"></span> <span style="opacity: 0.5; display: none;" class="next"></span> 
+    </div>
+    <div class="focus-images">
+      <ul>
+        <li style="background:url(../../images/mall/banner1.jpg) #eee center 0 no-repeat;"> <a target="_blank" href="#" rel="nofollow"></a> </li>
+        <li style="background:url(../../images/mall/banner1.jpg) #eee center 0 no-repeat;"> <a target="_blank" href="#" rel="nofollow"></a> </li>
+        <li style="background:url(../../images/mall/banner1.jpg) #eee center 0 no-repeat;"> <a target="_blank" href="#" rel="nofollow"></a> </li>
+      </ul>
+    </div>
+    <div class="focus-nav">
+        <ul>
+        </ul>
+    </div>
+</div>
+</div>
+<div class="container mt35">
+    <div class="special-box">
+        <ul>
+            <li>
+                <a href=""><img src="../../images/mall/special1.jpg"></a>
+            </li>
+            <li>
+                <a href=""><img src="../../images/mall/special2.jpg"></a>
+            </li>
+            <li>
+                <a href=""><img src="../../images/mall/special3.jpg"></a>
+            </li>
+            <li>
+                <a href=""><img src="../../images/mall/special4.jpg"></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="container mt35 furniture-box">
+    <div class="mall-title">
+        <div class="txt-l">家具 FURNITURE</div>
+        <div class="txt-r"><a href="">床</a><a href="">椅凳</a><a href="">书柜/衣柜</a><a href="">餐桌/书桌</a><a href="">茶几</a><a href="" class="more">更多>></a></div>
+    </div>
+    <div class="row">
+        <div class="col-ind-1">
+            <div class="index-nav">
+                <ul>
+                    <li>
+                        <div class="classify-name"><i class="icon icon-living"></i>客厅家具</div>
+                        <div class="classify"><a href="">电视柜</a>  <a href="">茶几</a>  <a href="">鞋柜</a>  <a href="">隔厅柜/玄关柜</a>  <a href="">酒柜</a></div>    
+                    </li>
+                    <li>
+                        <div class="classify-name"><i class="icon icon-bedroom"></i>卧室家具</div>
+                        <div class="classify"><a href="">实木床</a>  <a href="">斗柜</a>  <a href="">梳妆台</a>  <a href="">衣柜/衣帽间</a>  <a href="">床头柜</a></div>        
+                    </li>
+                    <li>
+                        <div class="classify-name"><i class="icon icon-dining"></i>餐厅家具</div>
+                        <div class="classify"><a href="">餐桌</a>  <a href="">餐椅</a>  <a href="">餐柜</a></div>      
+                    </li>
+                </ul>
+            </div>
+            <div class="furniture">
+                <img src="../../images/mall/furniture.jpg">
+            </div>
+        </div>
+        <div class="col-ind-1">
+            <div class="rel goods-box">
+                <a href=""><img src="../../images/mall/good_b1.jpg"></a>
+                <div class="index-big-box abs"><div class="ellipsis fl name"><a href="">欧式床 美式床 法式新古典床</a></div><div class="fr">￥4380.00</div></div>
+            </div>
+        </div>
+        <div class="col-ind-1">
+            <ul class="goods-left-box">
+                <li>
+                    <div class="goods-cell">
+                         <a href=""><img src="../../images/mall/jiaju1.jpg"></a><br>
+                        <div class="name"><a href="" class="fl ellipsis">居美印尚 白蜡木</a><span class="fr color-f40 text-right">￥236</span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="goods-cell">
+                         <a href=""><img src="../../images/mall/jiaju1.jpg"></a><br>
+                        <div class="name"><a href="" class="fl ellipsis">居美印尚 白蜡木</a><span class="fr color-f40 text-right">￥236</span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="goods-cell">
+                         <a href=""><img src="../../images/mall/jiaju1.jpg"></a><br>
+                        <div class="name"><a href="" class="fl ellipsis">居美印尚 白蜡木</a><span class="fr color-f40 text-right">￥236</span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="goods-cell">
+                         <a href=""><img src="../../images/mall/jiaju1.jpg"></a><br>
+                        <div class="name"><a href="" class="fl ellipsis">居美印尚 白蜡木</a><span class="fr color-f40 text-right">￥236</span></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container mt35 furniture-box">
+    <div class="mall-title">
+        <div class="txt-l">沙发床垫 SOFA MATTRESS</div>
+        <div class="txt-r"><a href="">床</a><a href="">沙发</a><a href="">床垫</a><a href="">软床</a><a href="" class="more">更多>></a></div>
+    </div>
+    <div class="row">
+        <div class="col-ind-1">
+            <div class="index-nav sofa">
+                <ul>
+                    <li>
+                        <div class="classify-name"><i class="icon icon-living"></i>沙发</div>
+                        <div class="classify"><a href="">皮艺沙发</a>  <a href="">布艺沙发</a>  <a href="">实木沙发</a>  <a href="">皮布结合沙发</a>  <a href="">沙发床</a></div>    
+                    </li>
+                    <li>
+                        <div class="classify-name"><i class="icon icon-bedroom"></i>床垫</div>
+                        <div class="classify"><a href="">乳胶床垫</a>  <a href="">弹簧床垫</a>  <a href="">天然椰棕床垫</a>  <a href="">儿童床垫</a></div>        
+                    </li>
+                    <li>
+                        <div class="classify-name"><i class="icon icon-bedroom"></i>软床</div>
+                        <div class="classify"><a href="">皮艺软床</a>  <a href="">布艺软床</a>  </div>      
+                    </li>
+                </ul>
+            </div>
+            <div class="furniture">
+                <img src="../../images/mall/shafa.jpg">
+            </div>
+        </div>
+        <div class="col-ind-1">
+            <div class="rel goods-box">
+                <a href=""><img src="../../images/mall/good_b2.jpg"></a>
+                <div class="index-big-box abs"><div class="ellipsis fl name"><a href="">欧式床 美式床 法式新古典床</a></div><div class="fr">￥4380.00</div></div>
+            </div>
+        </div>
+        <div class="col-ind-1">
+            <ul class="goods-left-box">
+                <li>
+                    <div class="goods-cell">
+                         <a href=""><img src="../../images/mall/jiaju1.jpg"></a><br>
+                        <div class="name"><a href="" class="fl ellipsis">居美印尚 白蜡木</a><span class="fr color-f40 text-right">￥236</span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="goods-cell">
+                         <a href=""><img src="../../images/mall/jiaju1.jpg"></a><br>
+                        <div class="name"><a href="" class="fl ellipsis">居美印尚 白蜡木</a><span class="fr color-f40 text-right">￥236</span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="goods-cell">
+                         <a href=""><img src="../../images/mall/jiaju1.jpg"></a><br>
+                        <div class="name"><a href="" class="fl ellipsis">居美印尚 白蜡木</a><span class="fr color-f40 text-right">￥236</span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="goods-cell">
+                         <a href=""><img src="../../images/mall/jiaju1.jpg"></a><br>
+                        <div class="name"><a href="" class="fl ellipsis">居美印尚 白蜡木</a><span class="fr color-f40 text-right">￥236</span></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container mt35 furniture-box">
+    <div class="mall-title">
+        <div class="txt-l">家居软装 HOUSEHOLD SOFT OUTFIT</div>
+        <div class="txt-r"><a href="">窗帘</a><a href="">活性炭</a><a href="">装饰画</a><a href="">床品套件</a><a href="">被子被芯</a><a href="">枕头</a><a href="" class="more">更多>></a></div>
+    </div>
+    <div class="row">
+        <div class="col-ind-1">
+            <div class="index-nav outfit">
+                <ul>
+                    <li>
+                        <div class="classify-name"><i class="icon icon-zhuangshi"></i>软装饰品</div>
+                        <div class="classify"><a href="">窗帘窗饰</a>  <a href="">装饰画</a>  <a href="">灯具/灯饰</a>  <a href="">智能家居</a>  </div>    
+                    </li>
+                    <li>
+                        <div class="classify-name"><i class="icon icon-bedroom"></i>床上用品</div>
+                        <div class="classify"><a href="">被子被芯</a>  <a href="">床品套件</a>  <a href="">枕头/枕芯</a>  </div>        
+                    </li>
+                    <li>
+                        <div class="classify-name"><i class="icon icon-fit"></i>收纳清洁净化</div>
+                        <div class="classify"><a href="">收纳架</a>  <a href="">置物架</a>  <a href="">活性炭</a> <a href="">清洁用品</a></div>      
+                    </li>
+                </ul>
+            </div>
+            <div class="furniture">
+                <img src="../../images/mall/yigui.jpg">
+            </div>
+        </div>
+        <div class="col-ind-1">
+            <div class="rel goods-box">
+                <a href=""><img src="../../images/mall/good_b3.jpg"></a>
+                <div class="index-big-box abs"><div class="ellipsis fl name"><a href="">欧式床 美式床 法式新古典床</a></div><div class="fr">￥4380.00</div></div>
+            </div>
+        </div>
+        <div class="col-ind-1">
+            <ul class="goods-left-box">
+                <li>
+                    <div class="goods-cell">
+                         <a href=""><img src="../../images/mall/jiaju1.jpg"></a><br>
+                        <div class="name"><a href="" class="fl ellipsis">居美印尚 白蜡木</a><span class="fr color-f40 text-right">￥236</span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="goods-cell">
+                         <a href=""><img src="../../images/mall/jiaju1.jpg"></a><br>
+                        <div class="name"><a href="" class="fl ellipsis">居美印尚 白蜡木</a><span class="fr color-f40 text-right">￥236</span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="goods-cell">
+                         <a href=""><img src="../../images/mall/jiaju1.jpg"></a><br>
+                        <div class="name"><a href="" class="fl ellipsis">居美印尚 白蜡木</a><span class="fr color-f40 text-right">￥236</span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="goods-cell">
+                         <a href=""><img src="../../images/mall/jiaju1.jpg"></a><br>
+                        <div class="name"><a href="" class="fl ellipsis">居美印尚 白蜡木</a><span class="fr color-f40 text-right">￥236</span></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--友情链接-->
+<div class="container mt35 furniture-box">
+    <div class="mall-title">
+        <div class="txt-l">友情链接 FRIENDLY LINK</div>
+    </div>
+	<div class="aalink fs12"> 
+		<a href="http://m.homekoo.com/" target="_blank">尚品宅配官网</a> | <a href="http://home.163.com/" target="_blank">网易家居</a> | <a href="http://www.TuManDuo.com" target="_blank">装修图满多</a> | <a href="https://www.eelly.com" target="_blank">衣联网</a> | <a href="http://www.tnc.com.cn/" target="_blank">面料网</a> | <a href="http://news.homekoo.com/jiaju" target="_blank">家具</a> | <a href="http://news.homekoo.com/jiajuzx" target="_blank">家居装修</a> | <a href="http://news.homekoo.com/" target="_blank">装修频道首页</a> | <a href="http://www.homekoo.com/shejishi/" target="_blank">设计师</a> | <a href="http://www.365azw.com/" target="_blank">装修</a> | <a href="http://hz.lianjia.com/" target="_blank">杭州二手房</a> | <a href="http://www.66zhuang.com" target="_blank">装修快车网</a> | <a href="http://watch.xbiao.com/" target="_blank">手表品牌排行榜</a> | <a href="http://www.b2b168.com/" target="_blank">八方资源网</a> | <a href="http://www.mayi.com" target="_blank">短租公寓</a> | <a href="http://www.17house.com/" target="_blank">装修网</a> | <a href="http://www.smm.cn" target="_blank">金属期货</a> | <a href="http://www.qqqnm.com/" target="_blank">海淘</a> | <a href="http://www.91lai.com/" target="_blank">返利网</a> | <a href="http://www.jiajuol.com" target="_blank">家居</a> | <a href="http://www.zjtcn.com/" target="_blank">工程造价</a> | <a href="http://bj.lianjia.com/" target="_blank">北京房产网</a> | <a href="http://post.smzdm.com/" target="_blank">购物攻略</a> | <a href="http://www.juanpi.com" target="_blank">品牌折扣</a> | <a href="http://tool.cncn.com/" target="_blank">欣欣百宝箱</a> | <a href="http://mydown.yesky.com/" target="_blank">软件下载</a> | <a href="http://www.shejiben.com/" target="_blank">室内设计</a> | <a href="http://www.cnhuadong.net/" target="_blank">华东在线</a> | <a href="http://www.zxdyw.com/" target="_blank">装修网</a> | <a href="http://www.zbj.com/" target="_blank">猪八戒网</a> | <a href="http://www.bidcenter.com.cn/" target="_blank">中国采招网</a> | <a href="http://www.ebrun.com/" target="_blank">电商新闻</a> | <a href="http://www.askci.com/" target="_blank">中商情报网</a> | <a href="http://www.aiuw.com" target="_blank">装修网</a> | <a href="http://www.jiuzheng.com/" target="_blank">装修网</a> | <a href="http://www.jiwu.com/" target="_blank">买房网</a> | <a href="http://www.oppein.cn/" target="_blank">家居商城</a> | <a href="http://www.s.cn" target="_blank">名鞋库</a> | <a href="http://www.wy100.com/" target="_blank">定制家具</a> | <a href="http://www.jieju.cn" target="_blank">卫浴网</a> | <a href="http://www.qianlima.com/" target="_blank">千里马招标网</a> | <a href="http://www.vmall.com/" target="_blank">华为商城</a> | <a href="http://www.zhe800.com/" target="_blank">折800</a> | <a href="http://shanghai.anjuke.com/" target="_blank">上海房产网</a> | <a href="http://www.ooopic.com/" target="_blank">我图网设计</a> | <a href="http://www.zhifang.com/" target="_blank">智房旅游地产</a> | <a href="http://www.bidchance.com/" target="_blank">中国招标网</a> | <a href="http://shike.gaotie.cn/" target="_blank">高铁时刻表</a> | <a href="http://365jilin.com/" target="_blank">吉和网</a> | <a href="http://tuku.51hejia.com" target="_blank">装修效果图</a> | <a href="http://www.zhulong.com" target="_blank">建筑</a> | <a href="http://www.to8to.com/" target="_blank">装修网</a> | <a href="http://www.zsezt.com/" target="_blank">装修设计网</a> | <span class="youqing_more"><a href="javascript:;" style="display: none;">更多&gt;&gt;</a></span>  
+	</div>
+</div>
+<!--新手帮助-->
+<div class="helper">
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <ul>
+                <li class="col-sm-3">
+                    <p>新手上路</p>
+                    <a rel="" href="" target="_blank">量尺送200元</a><br>
+                    <a rel="" href="" target="_blank">注册新用户</a><br>
+                    <a rel="" href="" target="_blank">了解产品工艺</a><br>
+                    <a rel="" href="" target="_blank">服务流程</a><br>
+                    <a rel="" href="" target="_blank">常见问题解答</a><br>
+                </li>
+                <li class="col-sm-3">
+                    <p>量房设计</p>
+                    <a rel="" href="" target="_blank">免费上门量尺设计</a><br>
+                    <a rel="" href="" target="_blank">电话预约</a><br>
+                    <a rel="" href="" target="_blank">在线咨询预约</a><br>
+                    <a rel="" href="" target="_blank">意向提交</a><br>
+                </li>
+                <li class="col-sm-3">
+                    <p>安全保障</p>
+                    <a rel="" href="" target="_blank">全国配送中心</a><br>
+                    <a rel="" href="" target="_blank">售后服务</a><br>
+                    <a href="" target="_blank">全国门店</a><br>
+                </li>
+                <li class="col-sm-3">
+                    <a target="_blank" href=""><p>招商加盟</p></a>
+                    <a target="_blank" href="" rel="nofollow">品牌实力</a><br>
+                    <a target="_blank" href="" rel="nofollow">互联网+模式</a><br>
+                    <a target="_blank" href="" rel="nofollow">加盟体系</a><br>
+                    <a target="_blank" href="" rel="nofollow">招商咨询</a>			
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</div>
+  <!--footer-->
+  <div class="footer mt25">
+  	<div class="container">
+        <div class="liner-nav">
+            <div class="nav-title">关于我们</div>
+            <ul>
+                <li><a href="" target="_blank">公司介绍</a></li>
+                <li><a href="" target="_blank">企业动态</a></li>
+                <li><a href="" target="_blank">联系我们</a></li>
+                <li><a href="" target="_blank">付款方式</a></li>
+            </ul>
+        </div>
+        <div class="liner-nav">
+            <div class="nav-title">我是业主</div>
+            <ul>
+                <li><a href="" target="_blank">找设计师</a></li>
+                <li><a href="" target="_blank">申请量房</a></li>
+                <li><a href="" target="_blank">申请报价</a></li>
+            </ul>
+        </div>
+        <div class="liner-nav">
+            <div class="nav-title">装修课堂</div>
+            <ul>
+                <li><a href="" target="_blank">装修日记</a></li>
+                <li><a href="" target="_blank">装修风水</a></li>
+                <li><a href="" target="_blank">装修知识</a></li>
+            </ul>
+        </div>
+        <div class="liner-nav liner-nav-kefu">
+            <div class="nav-title">联系客服</div>
+            <ul>
+                <li>周一至周日： 8：00-22：00</li>
+                <li>全国统一服务热线：</li>
+                <li>0311-00000000</li>
+                <li><a href="" class="connect" target="_blank">在线咨询</a></li>
+            </ul>
+        </div>
+        <div class="liner-nav">
+            <div class="nav-title">关注我们</div>
+            <ul>
+                <li><img src="../../images/sts_ewm.jpg"></li>
+            </ul>
+        </div>
+    </div>
+  </div>
+  <div class="footer-mianze">免责声明：本网站部分内容由用户自行上传，如权利人发现存在误传其作品情形，请及时与本站联系
+生态树 保留所有权利</div>
+<!--右侧浮动-->
+<div class="right-tip">
+	<ul>
+    	<li><a href=""><i class="icon icon-kefu"></i><br>在线客服</a></li>
+        <li><a href=""><i class="icon icon-gongdan"></i><br>我的工单</a></li>
+        <li><i class="icon icon-shuju"></i><br>房子数据</li>
+        <li><i class="icon icon-jisuanqi"></i><br>计算器</li>
+        <li id="back-top"><i class="icon icon-back"></i><br>返回顶部</li>
+    </ul>
+</div>
+<!--底部房子数据-->
+<div class="bottom-num">
+	<div class="container rel">
+    	<div class="row">
+        	<div class="col-xs-3 bottom-num-left"><img src="../../images/mall/商城_46.png"></div>
+            <div class="col-xs-9 bottom-num-right">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                         <div class="col-sm-4">
+                            <label for="" class="control-label fl">面&emsp;积：</label>
+                            <div class="col-xs-6">
+                              <input type="text" class="form-control" id="">
+                            </div>
+                            <label class="control-label fl">平米</label>
+                         </div>
+                         <div class="col-sm-4">
+                            <label for="firstname" class="control-label fl">卧&emsp;室：</label>
+                            <div class="col-xs-6">
+                              <input type="text" class="form-control" id="firstname">
+                            </div>
+                            <label class="control-label">平米</label>
+                         </div>
+                         <div class="col-sm-4">
+                            <label for="firstname" class="control-label fl">客&emsp;厅：</label>
+                            <div class="col-xs-6">
+                              <input type="text" class="form-control" id="firstname">
+                            </div>
+                            <label class="control-label">平米</label>
+                         </div>
+                         <div class="col-sm-4">
+                            <label for="firstname" class="control-label fl">书&emsp;房：</label>
+                            <div class="col-xs-6">
+                              <input type="text" class="form-control" id="firstname">
+                            </div>
+                            <label class="control-label">平米</label>
+                         </div>
+                         <div class="col-sm-4">
+                            <label for="firstname" class="control-label fl">儿童房：</label>
+                            <div class="col-xs-6">
+                              <input type="text" class="form-control" id="firstname">
+                            </div>
+                            <label class="control-label">平米</label>
+                         </div>
+                         <div class="col-sm-4">
+                            <label for="firstname" class="control-label fl">厨&emsp;房：</label>
+                            <div class="col-xs-6">
+                              <input type="text" class="form-control" id="firstname">
+                            </div>
+                            <label class="control-label">平米</label>
+                         </div>
+                         <div class="col-sm-4">
+                            <label for="firstname" class="control-label fl">卫生间：</label>
+                            <div class="col-xs-6">
+                              <input type="text" class="form-control" id="firstname">
+                            </div>
+                            <label class="control-label">平米</label>
+                         </div>
+                          <div class="col-sm-4">
+                            <label for="firstname" class="control-label fl">阳&emsp;台：</label>
+                            <div class="col-xs-6">
+                              <input type="text" class="form-control" id="firstname">
+                            </div>
+                            <label class="control-label">平米</label>
+                         </div>
+                         <div class="col-sm-4">
+                            <label for="firstname" class="control-label fl">新&emsp;建：</label>
+                            <div class="col-xs-6">
+                              <input type="text" class="form-control" id="firstname">
+                            </div>
+                            <label class="control-label">平米</label>
+                         </div>
+                     </div>
+                </form>
+            </div>
+        </div>
+        <div class="close-bottom-num">×</div>
+    </div>
+</div>
+<!--计算器-->
+<div class="black-bg"></div>
+<div id="calculator" class="calculator">
+    <div id="calcu-head"><span class="fs14">计算器</span><span class="imyeah"><a href="javascript:;" id="close_jsq" target="_blank">关闭</a></span></div>
+    <form name="calculator" action="" method="get">
+        <div id="calcu-screen">
+            <!--配置显示窗口，使用onfocus="this.blur();"避免键盘输入-->
+            <input type="text" name="numScreen" class="screen form-control" value="0" onfocus="this.blur();" />
+        </div>
+        <div id="calcu-btn">
+            <ul> <!--配置按钮-->
+                <li onclick="command(7)">7</li>
+                <li onclick="command(8)">8</li>
+                <li onclick="command(9)">9</li>
+                <li class="tool" onclick="del()">←</li>
+                <li class="tool" onclick="clearscreen()">C</li>
+                <li onclick="command(4)">4</li>
+                <li onclick="command(5)">5</li>
+                <li onclick="command(6)">6</li>
+                <li class="tool" onclick="times()">×</li>
+                <li class="tool" onclick="divide()">÷</li>
+                <li onclick="command(1)">1</li>
+                <li onclick="command(2)">2</li>
+                <li onclick="command(3)">3</li>
+                <li class="tool" onclick="plus()">+</li>
+                <li class="tool" onclick="minus()">-</li>
+                <li onclick="command(0)">0</li>
+                <li onclick="dzero()">00</li>
+                <li onclick="dot()">.</li>
+                <li class="tool" onclick="persent()">%</li>
+                <li class="tool" onclick="equal()">=</li>
+            </ul>
+        </div>
+        <div id="calcu-foot">
+            <span id="note"></span>
+            <span class="welcome">欢迎使用生态树！</span>
+        </div>
+    </form>
+</div>
+<script src="../../Scripts/jquery.min.js"></script>
+<script src="../../Scripts/bootstrap.min.js"></script>
+<script src="../../Scripts/jquery.SuperSlide.2.1.1.js"></script> 
+<script type="text/javascript" src="../../Scripts/jquery.flexisel.js"></script>
+<script type="text/javascript" src="../../Scripts/jisuanqi.js"></script>
+<script type="text/javascript">
+$("#focus").slide({
+    titCell:".focus-nav ul",
+    mainCell:".focus-images ul",
+    effect:"fold",
+    autoPlay:true,
+    autoPage:true,
+    trigger:"click"
+});
+$(".banner-nav-list>ul>li").hover(function(){
+    $(this).find(".open-classify").show();
+},function(){
+    $(this).find(".open-classify").hide();
+})
+$(window).scroll(function(){
+	var hei = $(window).scrollTop();
+	if(hei>519){
+		$(".right-tip").show();
+	}else{
+		$(".right-tip").hide();
+	}
+})
+//返回顶部
+$("#back-top").click(function () {
+	$("html,body").animate({ scrollTop: 0 }, 500);
+});
+//房子数据
+$(".close-bottom-num").click(function(){
+	var height = $(".bottom-num").height() +54;
+	height = parseInt("-" + height);
+	$(".bottom-num").animate({"bottom":height},500)
+})
+$(".right-tip .icon-shuju").click(function(){
+	$(".bottom-num").animate({"bottom":0},500)
+})
+//计算器
+$("#close_jsq").click(function(){
+	$("#calculator,.black-bg").hide();
+})
+$(".right-tip .icon-jisuanqi").click(function(){
+	$("#calculator,.black-bg").show();
+})
+</script>
+</body>
+</html>

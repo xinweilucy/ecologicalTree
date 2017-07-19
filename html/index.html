@@ -1,0 +1,671 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>生态树商城</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 引入 Bootstrap -->
+<link href="../Style/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../Style/font-awesome.min.css">
+<link href="../Style/reset.css" rel="stylesheet">
+<link href="../Style/main.css" rel="stylesheet">
+<link href="../Style/index.css" rel="stylesheet">
+<!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+<!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+<!--[if lt IE 9]>
+ <script src="../Scripts/html5shiv.js"></script>
+ <script src="../Scripts/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!--顶部-->
+<div class="s-top">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-sm-6 color6">家装就选生态树！</div>
+            <div class="col-sm-6 text-right">
+            	<a href="login.html">登录</a><span> | </span><a href="register.html">注册</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--头部-->
+<div class="s-header">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-sm-7"><a href="index.html"><img src="../images/logo.png"></a></div>
+            <div class="col-sm-5 text-right">
+            	<ul class="nav nav-pills nav-justified mt15">
+                	<li class="active"><a href="index.html" target="_blank">我要装修</a></li>
+                    <li><a href="myLoan.html" target="_blank">我要贷款</a></li>
+                    <li><a href="" target="_blank">建材商城</a></li>
+                    <li><a href="mall/mall.html" target="_blank">家具商城</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container rel">
+	<div class="service abs">
+    	<ul>
+        	<li>
+            	<a href=""><i class="kefu"></i>在线客服</a>
+            </li>
+            <li>
+            	<a href=""><i class="free"></i>免费量房</a>
+            </li>
+            <li>
+            	<a href=""><i class="quickly"></i>快速贷款</a>
+            </li>
+            <li>
+            	<a href=""><i class="jisuan"></i>装修计算</a>
+            </li>
+            <li>
+            	<a href=""><i class="xijie"></i>装修细节</a>
+            </li>
+            <li>
+            	<a href=""><i class="shigong"></i>施工现场</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- 幻灯片开始 -->
+  <div class="banner">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><a href="#"><img  src="../images/banner1.jpg" ></a></div>
+        <div class="swiper-slide"><a href="#"><img  src="../images/banner1.jpg" ></a></div>
+        <div class="swiper-slide"><a href="#"><img  src="../images/banner1.jpg" ></a></div>
+      </div>
+      <div class="pagination"></div>
+    </div>
+  </div>
+  <!-- 幻灯片结束 -->
+  <!-- 筛选列表 -->
+  <div class="container">
+  	<div class="screen-box mt25">
+    	<div class="screen-condition row">
+        	<div class="col-xs-1 color-green">预算:</div>
+            <div class="col-xs-7">
+            	<a href="javascript:;" class="active">3万以内</a>
+                <a href="javascript:;">3-5万</a>
+                <a href="javascript:;">5-7万</a>
+                <a href="javascript:;">7-10万</a>
+            </div>
+            <div class="col-xs-4 color9">
+            	<span class="color-green">自定义：</span><input type="text" class="inp-text" >-<input type="text" class="inp-text" > 万 <input type="button" class="s-screen-btn" value="确定">
+            </div>
+        </div>
+        <div class="screen-condition row">
+        	<div class="col-xs-1 color-green">面积:</div>
+            <div class="col-xs-8">
+            	<a href="javascript:;" class="active">全部</a>
+                <a href="javascript:;">50平以下</a>
+                <a href="javascript:;">50-70平</a>
+                <a href="javascript:;">70-90平</a>
+                <a href="javascript:;">90-110平</a>
+                <a href="javascript:;">110-130平</a>
+                <a href="javascript:;">30平以上</a>
+            </div>
+             <div class="col-xs-3 color9">
+            	<span class="color-green">自定义：</span><input type="text" class="inp-text" > 平 <input type="button" class="s-screen-btn" value="确定">
+            </div>
+        </div>
+        <div class="screen-condition row">
+        	<div class="col-xs-1 color-green">风格:</div>
+            <div class="col-xs-11">
+            	<a href="javascript:;" class="active">全部</a>
+                <a href="javascript:;">现代简约</a>
+                <a href="javascript:;">田园风格</a>
+                <a href="javascript:;">日式风</a>
+                <a href="javascript:;">美式风</a>
+            </div>
+        </div>
+        <div class="screen-condition row">
+        	<div class="col-xs-1 color-green">户型:</div>
+            <div class="col-xs-11">
+            	<a href="javascript:;" class="active">全部</a>
+                <a href="javascript:;">一居室</a>
+                <a href="javascript:;">两居室</a>
+                <a href="javascript:;">三居室</a>
+                <a href="javascript:;">四居室</a>
+                <a href="javascript:;">五居室</a>
+                <a href="javascript:;">五居室以上</a>
+            </div>
+        </div>
+    </div>
+    <div class="screen-list">
+    	<ul class="row">
+        	<li class="col-xs-3">
+            	<div class="screen-cell">
+                    <div class="screen-img rel">
+                        <img src="../images/img1.jpg">
+                        <div class="contral">
+                            <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                            <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                        </div>
+                    </div>
+                    <div class="detail"><a href="" class="zone" target="_blank">129平荣盛华府精装129平荣盛华府精装</a><a href="" class="price" target="_blank">￥15万</a></div>
+                    <div class="tip"><span>现代简约</span><span>三室</span></div>
+                </div>
+            </li>
+            <li class="col-xs-3">
+            	<div class="screen-cell">
+                    <div class="screen-img rel">
+                        <img src="../images/img1.jpg">
+                        <div class="contral">
+                            <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                            <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                        </div>
+                    </div>
+                    <div class="detail"><a href="" class="zone" target="_blank">129平荣盛华府精装</a><a href="" class="price" target="_blank">￥15万</a></div>
+                    <div class="tip"><span>现代简约</span><span>三室</span></div>
+                </div>
+            </li>
+            <li class="col-xs-3">
+            	<div class="screen-cell">
+                    <div class="screen-img rel">
+                        <img src="../images/img1.jpg">
+                        <div class="contral">
+                            <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                            <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                        </div>
+                    </div>
+                    <div class="detail"><a href="" class="zone" target="_blank">129平荣盛华府精装</a><a href="" class="price" target="_blank">￥15万</a></div>
+                    <div class="tip"><span>现代简约</span><span>三室</span></div>
+                </div>
+            </li>
+            <li class="col-xs-3">
+            	<div class="screen-cell">
+                    <div class="screen-img rel">
+                        <img src="../images/img1.jpg">
+                        <div class="contral">
+                            <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                            <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                        </div>
+                    </div>
+                    <div class="detail"><a href="" class="zone" target="_blank">129平荣盛华府精装</a><a href="" class="price" target="_blank">￥15万</a></div>
+                    <div class="tip"><span>现代简约</span><span>三室</span></div>
+                </div>
+            </li>
+            <li class="col-xs-3">
+            	<div class="screen-cell">
+                    <div class="screen-img rel">
+                        <img src="../images/img1.jpg">
+                        <div class="contral">
+                            <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                            <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                        </div>
+                    </div>
+                    <div class="detail"><a href="" class="zone" target="_blank">129平荣盛华府精装129平荣盛华府精装</a><a href="" class="price" target="_blank">￥15万</a></div>
+                    <div class="tip"><span>现代简约</span><span>三室</span></div>
+                </div>
+            </li>
+            <li class="col-xs-3">
+            	<div class="screen-cell">
+                    <div class="screen-img rel">
+                        <img src="../images/img1.jpg">
+                        <div class="contral">
+                            <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                            <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                        </div>
+                    </div>
+                    <div class="detail"><a href="" class="zone" target="_blank">129平荣盛华府精装</a><a href="" class="price" target="_blank">￥15万</a></div>
+                    <div class="tip"><span>现代简约</span><span>三室</span></div>
+                </div>
+            </li>
+            <li class="col-xs-3">
+            	<div class="screen-cell">
+                    <div class="screen-img rel">
+                        <img src="../images/img1.jpg">
+                        <div class="contral">
+                            <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                            <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                        </div>
+                    </div>
+                    <div class="detail"><a href="" class="zone" target="_blank">129平荣盛华府精装</a><a href="" class="price" target="_blank">￥15万</a></div>
+                    <div class="tip"><span>现代简约</span><span>三室</span></div>
+                </div>
+            </li>
+            <li class="col-xs-3">
+            	<div class="screen-cell">
+                    <div class="screen-img rel">
+                        <img src="../images/img1.jpg">
+                        <div class="contral">
+                            <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                            <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                        </div>
+                    </div>
+                    <div class="detail"><a href="" class="zone" target="_blank">129平荣盛华府精装</a><a href="" class="price" target="_blank">￥15万</a></div>
+                    <div class="tip"><span>现代简约</span><span>三室</span></div>
+                </div>
+            </li>
+            <li class="col-xs-3">
+            	<div class="screen-cell">
+                    <div class="screen-img rel">
+                        <img src="../images/img1.jpg">
+                        <div class="contral">
+                            <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                            <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                        </div>
+                    </div>
+                    <div class="detail"><a href="" class="zone" target="_blank">129平荣盛华府精装129平荣盛华府精装</a><a href="" class="price" target="_blank">￥15万</a></div>
+                    <div class="tip"><span>现代简约</span><span>三室</span></div>
+                </div>
+            </li>
+            <li class="col-xs-3">
+            	<div class="screen-cell">
+                    <div class="screen-img rel">
+                        <img src="../images/img1.jpg">
+                        <div class="contral">
+                            <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                            <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                        </div>
+                    </div>
+                    <div class="detail"><a href="" class="zone" target="_blank">129平荣盛华府精装</a><a href="" class="price" target="_blank">￥15万</a></div>
+                    <div class="tip"><span>现代简约</span><span>三室</span></div>
+                </div>
+            </li>
+            <li class="col-xs-3">
+            	<div class="screen-cell">
+                    <div class="screen-img rel">
+                        <img src="../images/img1.jpg">
+                        <div class="contral">
+                            <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                            <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                        </div>
+                    </div>
+                    <div class="detail"><a href="" class="zone" target="_blank">129平荣盛华府精装</a><a href="" class="price" target="_blank">￥15万</a></div>
+                    <div class="tip"><span>现代简约</span><span>三室</span></div>
+                </div>
+            </li>
+            <li class="col-xs-3">
+            	<div class="screen-cell">
+                    <div class="screen-img rel">
+                        <img src="../images/img1.jpg">
+                        <div class="contral">
+                            <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                            <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                        </div>
+                    </div>
+                    <div class="detail"><a href="" class="zone" target="_blank">129平荣盛华府精装</a><a href="" class="price" target="_blank">￥15万</a></div>
+                    <div class="tip"><span>现代简约</span><span>三室</span></div>
+                </div>
+            </li>
+            <li class="col-xs-3">
+            	<div class="screen-cell">
+                    <div class="screen-img rel">
+                        <img src="../images/img1.jpg">
+                        <div class="contral">
+                            <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                            <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                        </div>
+                    </div>
+                    <div class="detail"><a href="" class="zone" target="_blank">129平荣盛华府精装129平荣盛华府精装</a><a href="" class="price" target="_blank">￥15万</a></div>
+                    <div class="tip"><span>现代简约</span><span>三室</span></div>
+                </div>
+            </li>
+            <li class="col-xs-3">
+            	<div class="screen-cell">
+                    <div class="screen-img rel">
+                        <img src="../images/img1.jpg">
+                        <div class="contral">
+                            <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                            <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                        </div>
+                    </div>
+                    <div class="detail"><a href="" class="zone" target="_blank">129平荣盛华府精装</a><a href="" class="price" target="_blank">￥15万</a></div>
+                    <div class="tip"><span>现代简约</span><span>三室</span></div>
+                </div>
+            </li>
+            <li class="col-xs-3">
+            	<div class="screen-cell">
+                    <div class="screen-img rel">
+                        <img src="../images/img1.jpg">
+                        <div class="contral">
+                            <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                            <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                        </div>
+                    </div>
+                    <div class="detail"><a href="" class="zone" target="_blank">129平荣盛华府精装</a><a href="" class="price" target="_blank">￥15万</a></div>
+                    <div class="tip"><span>现代简约</span><span>三室</span></div>
+                </div>
+            </li>
+            <li class="col-xs-3">
+            	<div class="screen-cell">
+                    <div class="screen-img rel">
+                        <img src="../images/img1.jpg">
+                        <div class="contral">
+                            <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                            <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                        </div>
+                    </div>
+                    <div class="detail"><a href="" class="zone" target="_blank">129平荣盛华府精装</a><a href="" class="price" target="_blank">￥15万</a></div>
+                    <div class="tip"><span>现代简约</span><span>三室</span></div>
+                </div>
+            </li>
+            <li class="col-xs-3">
+            	<div class="screen-cell">
+                    <div class="screen-img rel">
+                        <img src="../images/img1.jpg">
+                        <div class="contral">
+                            <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                            <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                        </div>
+                    </div>
+                    <div class="detail"><a href="" class="zone" target="_blank">129平荣盛华府精装129平荣盛华府精装</a><a href="" class="price" target="_blank">￥15万</a></div>
+                    <div class="tip"><span>现代简约</span><span>三室</span></div>
+                </div>
+            </li>
+            <li class="col-xs-3">
+            	<div class="screen-cell">
+                    <div class="screen-img rel">
+                        <img src="../images/img1.jpg">
+                        <div class="contral">
+                            <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                            <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                        </div>
+                    </div>
+                    <div class="detail"><a href="" class="zone" target="_blank">129平荣盛华府精装</a><a href="" class="price" target="_blank">￥15万</a></div>
+                    <div class="tip"><span>现代简约</span><span>三室</span></div>
+                </div>
+            </li>
+            <li class="col-xs-3">
+            	<div class="screen-cell">
+                    <div class="screen-img rel">
+                        <img src="../images/img1.jpg">
+                        <div class="contral">
+                            <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                            <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                        </div>
+                    </div>
+                    <div class="detail"><a href="" class="zone" target="_blank">129平荣盛华府精装</a><a href="" class="price" target="_blank">￥15万</a></div>
+                    <div class="tip"><span>现代简约</span><span>三室</span></div>
+                </div>
+            </li>
+            <li class="col-xs-3">
+            	<div class="screen-cell">
+                    <div class="screen-img rel">
+                        <img src="../images/img1.jpg">
+                        <div class="contral">
+                            <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                            <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                        </div>
+                    </div>
+                    <div class="detail"><a href="" class="zone" target="_blank">129平荣盛华府精装</a><a href="" class="price" target="_blank">￥15万</a></div>
+                    <div class="tip"><span>现代简约</span><span>三室</span></div>
+                </div>
+            </li>
+            <li class="col-xs-3">
+            	<div class="screen-cell">
+                    <div class="screen-img rel">
+                        <img src="../images/img1.jpg">
+                        <div class="contral">
+                            <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                            <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                        </div>
+                    </div>
+                    <div class="detail"><a href="" class="zone" target="_blank">129平荣盛华府精装129平荣盛华府精装</a><a href="" class="price" target="_blank">￥15万</a></div>
+                    <div class="tip"><span>现代简约</span><span>三室</span></div>
+                </div>
+            </li>
+            <li class="col-xs-3">
+            	<div class="screen-cell">
+                    <div class="screen-img rel">
+                        <img src="../images/img1.jpg">
+                        <div class="contral">
+                            <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                            <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                        </div>
+                    </div>
+                    <div class="detail"><a href="" class="zone" target="_blank">129平荣盛华府精装</a><a href="" class="price" target="_blank">￥15万</a></div>
+                    <div class="tip"><span>现代简约</span><span>三室</span></div>
+                </div>
+            </li>
+            <li class="col-xs-3">
+            	<div class="screen-cell">
+                    <div class="screen-img rel">
+                        <img src="../images/img1.jpg">
+                        <div class="contral">
+                            <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                            <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                        </div>
+                    </div>
+                    <div class="detail"><a href="" class="zone" target="_blank">129平荣盛华府精装</a><a href="" class="price" target="_blank">￥15万</a></div>
+                    <div class="tip"><span>现代简约</span><span>三室</span></div>
+                </div>
+            </li>
+            <li class="col-xs-3">
+            	<div class="screen-cell">
+                    <div class="screen-img rel">
+                        <img src="../images/img1.jpg">
+                        <div class="contral">
+                            <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                            <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                        </div>
+                    </div>
+                    <div class="detail"><a href="" class="zone" target="_blank">129平荣盛华府精装</a><a href="" class="price" target="_blank">￥15万</a></div>
+                    <div class="tip"><span>现代简约</span><span>三室</span></div>
+                </div>
+            </li>
+        </ul>
+        <div class="clear"></div>
+        <div class="s-page">
+        	<ul class="pagination">
+                <li><a href="#">上一页</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">下一页</a></li>
+             </ul>
+             <div class="clear"></div>
+        </div>
+    </div>
+    <!--特价装修-->
+    <div class="special mt25">
+    	<div class="s-title">
+        	<div class="text fs18 color-green">特价装修</div>
+        </div>
+        <ul class="row">
+        	<li class="col-xs-3">
+            	<div class="screen-cell">
+                    <div class="screen-img rel">
+                        <img src="../images/img1.jpg">
+                        <div class="contral">
+                            <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                            <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                        </div>
+                    </div>
+                    <div class="detail"><a href="" class="price" target="_blank">￥15万</a><span class="old-price color9 fs12">原价：￥20万</span></div>
+                    <div class="zone-name ellipsis"><a href="" target="_blank">129平荣盛华府精装129平荣盛华府精装</a></div>
+                    <div class="tip"><span>现代简约</span><span>三室</span></div>
+                </div>
+            </li>
+            <li class="col-xs-3">
+            	<div class="screen-cell">
+                    <div class="screen-img rel">
+                        <img src="../images/img1.jpg">
+                        <div class="contral">
+                            <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                            <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                        </div>
+                    </div>
+                    <div class="detail"><a href="" class="price" target="_blank">￥15万</a><span class="old-price color9 fs12">原价：￥20万</span></div>
+                    <div class="zone-name ellipsis"><a href="" target="_blank">129平荣盛华府精装129平荣盛华府精装</a></div>
+                    <div class="tip"><span>现代简约</span><span>三室</span></div>
+                </div>
+            </li>
+            <li class="col-xs-3">
+            	<div class="screen-cell">
+                    <div class="screen-img rel">
+                        <img src="../images/img1.jpg">
+                        <div class="contral">
+                            <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                            <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                        </div>
+                    </div>
+                    <div class="detail"><a href="" class="price" target="_blank">￥15万</a><span class="old-price color9 fs12">原价：￥20万</span></div>
+                    <div class="zone-name ellipsis"><a href="" target="_blank">129平荣盛华府精装129平荣盛华府精装</a></div>
+                    <div class="tip"><span>现代简约</span><span>三室</span></div>
+                </div>
+            </li>
+            <li class="col-xs-3">
+            	<div class="screen-cell">
+                    <div class="screen-img rel">
+                        <img src="../images/img1.jpg">
+                        <div class="contral">
+                            <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                            <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                        </div>
+                    </div>
+                    <div class="detail"><a href="" class="price" target="_blank">￥15万</a><span class="old-price color9 fs12">原价：￥20万</span></div>
+                    <div class="zone-name ellipsis"><a href="" target="_blank">129平荣盛华府精装129平荣盛华府精装</a></div>
+                    <div class="tip"><span>现代简约</span><span>三室</span></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--品牌合作商-->
+    <div class="cooperation mt20">
+    	<div class="s-title">
+        	<div class="text fs18 color-green">品牌合作商</div>
+        </div>
+        <div class="content-middle-in">
+            <ul id="cooperater">			
+                <li><img src="../images/wanke-logo.jpg"/></li>
+                <li><img src="../images/make-logo.jpg"/></li>
+                <li><img src="../images/lvdi-logo.jpg"/></li>
+                <li><img src="../images/make-logo.jpg"/></li>            
+            </ul>
+		</div>
+    </div>
+     <!--最新设计-->
+      <div class="new-design">
+        <div class="index-title fs18 ">&emsp;&emsp;最新设计</div>
+        <div class="content-middle-in">
+            <ul id="newDesign">			
+                <li>
+                    <div class="screen-cell">
+                        <div class="screen-img rel">
+                            <img src="../images/img1.jpg">
+                            <div class="contral">
+                                <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                                <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                            </div>
+                        </div>
+                        <div class="detail"><a href="" class="zone" target="_blank">129平荣盛华府精装</a><a href="" class="price" target="_blank">￥15万</a></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="screen-cell">
+                        <div class="screen-img rel">
+                            <img src="../images/img1.jpg">
+                            <div class="contral">
+                                <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                                <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                            </div>
+                        </div>
+                        <div class="detail"><a href="" class="zone" target="_blank">129平荣盛华府精装</a><a href="" class="price" target="_blank">￥15万</a></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="screen-cell">
+                        <div class="screen-img rel">
+                            <img src="../images/img1.jpg">
+                            <div class="contral">
+                                <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                                <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                            </div>
+                        </div>
+                        <div class="detail"><a href="" class="zone" target="_blank">129平荣盛华府精装</a><a href="" class="price" target="_blank">￥15万</a></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="screen-cell">
+                        <div class="screen-img rel">
+                            <img src="../images/img1.jpg">
+                            <div class="contral">
+                                <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                                <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                            </div>
+                        </div>
+                        <div class="detail"><a href="" class="zone" target="_blank">129平荣盛华府精装</a><a href="" class="price" target="_blank">￥15万</a></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="screen-cell">
+                        <div class="screen-img rel">
+                            <img src="../images/img1.jpg">
+                            <div class="contral">
+                                <a href="javascript:;"><i class="icon-thumbs-up"></i> 13 </a>
+                                <a href="javascript:;"><i class="icon-comment"></i> 20 </a>
+                            </div>
+                        </div>
+                        <div class="detail"><a href="" class="zone" target="_blank">129平荣盛华府精装</a><a href="" class="price" target="_blank">￥15万</a></div>
+                    </div>
+                </li>          
+            </ul>
+		</div>
+      </div>
+  </div>
+  <!--footer-->
+  <div class="footer mt25">
+  	<div class="container">
+        <div class="liner-nav">
+            <div class="nav-title">关于我们</div>
+            <ul>
+                <li><a href="" target="_blank">公司介绍</a></li>
+                <li><a href="" target="_blank">企业动态</a></li>
+                <li><a href="" target="_blank">联系我们</a></li>
+                <li><a href="" target="_blank">付款方式</a></li>
+            </ul>
+        </div>
+        <div class="liner-nav">
+            <div class="nav-title">我是业主</div>
+            <ul>
+                <li><a href="" target="_blank">找设计师</a></li>
+                <li><a href="" target="_blank">申请量房</a></li>
+                <li><a href="" target="_blank">申请报价</a></li>
+            </ul>
+        </div>
+        <div class="liner-nav">
+            <div class="nav-title">装修课堂</div>
+            <ul>
+                <li><a href="" target="_blank">装修日记</a></li>
+                <li><a href="" target="_blank">装修风水</a></li>
+                <li><a href="" target="_blank">装修知识</a></li>
+            </ul>
+        </div>
+        <div class="liner-nav liner-nav-kefu">
+            <div class="nav-title">联系客服</div>
+            <ul>
+                <li>周一至周日： 8：00-22：00</li>
+                <li>全国统一服务热线：</li>
+                <li>0311-00000000</li>
+                <li><a href="" class="connect" target="_blank">在线咨询</a></li>
+            </ul>
+        </div>
+        <div class="liner-nav">
+            <div class="nav-title">关注我们</div>
+            <ul>
+                <li><img src="../images/sts_ewm.jpg"></li>
+            </ul>
+        </div>
+    </div>
+  </div>
+  <div class="footer-mianze">免责声明：本网站部分内容由用户自行上传，如权利人发现存在误传其作品情形，请及时与本站联系
+生态树 保留所有权利</div>
+<!--返回顶部-->
+<div class="back-top">
+	<i></i>返回顶部
+</div>
+<script src="../Scripts/jquery.min.js"></script>
+<script src="../Scripts/bootstrap.min.js"></script>
+<script src="../Scripts/idangerous.swiper-2.1.min.js"></script>
+<script type="text/javascript" src="../Scripts/jquery.flexisel.js"></script>
+<script src="../Scripts/indexCommon/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,563 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>生态树商城-用户中心-上传设计</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+<!-- 引入 Bootstrap -->
+<link href="../../Style/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../../Style/font-awesome.min.css">
+<link href="../../Scripts/bootstrap-fileinput-master/css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
+<link href="../../Style/reset.css" rel="stylesheet">
+<link href="../../Style/main.css" rel="stylesheet">
+<link href="../../Style/person/personbase.css" rel="stylesheet">
+<link href="../../Style/person/mmenu.css" rel="stylesheet">
+<!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+<!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+<!--[if lt IE 9]>
+ <script src="../Scripts/html5shiv.js"></script>
+ <script src="../Scripts/respond.min.js"></script>
+<![endif]-->
+<!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="../../Style/bootstrap-ie6.css">
+  <![endif]-->
+  <!--[if lte IE 7]>
+  <link rel="stylesheet" type="text/css" href="../../Style/ie.css">
+  <![endif]-->
+</head>
+<body>
+<!--顶部-->
+<div class="s-top">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-sm-6"></div>
+            <div class="col-sm-6 text-right">
+            	<a href="login.html">1402571912</a><span> | </span><a href="">退出</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--头部-->
+<div class="s-header s-header-liner">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-sm-7"><a href="index.html"><img src="../../images/logo.png"></a></div>
+            <div class="col-sm-5 text-right"  id="pMenu">
+            	<ul class="nav nav-pills nav-justified mt15">
+                	<li class="active"><a href="../index.html" target="_blank">我要装修</a></li>
+                    <li><a href="../myLoan.html" target="_blank">我要贷款</a></li>
+                    <li><a href="" target="_blank">建材商城</a></li>
+                    <li><a href="../mall/mall.html" target="_blank">家具商城</a></li>
+                </ul>
+                <a href="#menu-right" class="color6"><i class="icon-reorder color-green"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="s-banner">
+	<div class="container">
+    	<div class="row">
+            <div class="col-xs-6">
+            	<div class="user-box fs12 rel"><img class="user-pic" src="../../images/user.jpg"><span class="fl mt"><span class="fs18">1402571912</span>，您好！</span><span class="fl renzheng mt"><i class="icon-renzheng"></i> 已认证</span><span class="fl unrenzheng mt" style="display:none;"><i class="icon-un-renzheng"></i> 未认证 <a href="" class="go-renzheng">去认证>></a></span></div>
+            </div>
+            <div class="col-xs-6 text-right user-message">
+            	<span>装修 1</span><span> 共享 0</span><span>余额 328</span>
+            </div>        	
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+<div class="container mt50">
+    <div class="row">
+        <div class="col-xs-3 user-left-box">
+            <div class="user-title fs18">我是业主</div>
+            <ul class="user-nav">
+                <li><a href="userCenter.html">我的装修</a></li>
+                <li><a href="userShare.html">我的共享空间</a></li>
+                <li><a href="userbalance.html">我的余额</a></li>
+                <li><a href="userrelname.html">实名认证</a></li>
+                <li><a href="userCard.html">我的银行卡</a></li>
+            </ul>
+            <div class="user-title fs18">我是设计师</div>
+            <ul class="user-nav">
+                <li class="active"><a href="designerUpload.html">上传设计</a></li>
+                <li><a href="myDesign.html">我的设计</a></li>
+                <li><a href="userbalance.html">我的余额</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-9 user-right-box">
+            <div class="s-title fs16 mt10"><div class="text">上传设计</div></div>
+            <div class="mybalance">
+                <div class="row">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="" class="control-label col-xs-3 text-right">作品名称 ：</label>
+                            <div class="col-xs-9">
+                            <input class="form-control " id="" placeholder="" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="control-label col-xs-3 text-right">色彩个性 ：</label>
+                            <div class="col-xs-9 house-color">
+                            	<input type="checkbox"> 黑色
+                                <input type="checkbox"> 白色
+                                <input type="checkbox"> 灰色
+                                <input type="checkbox"> 绿色
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="control-label col-xs-3 text-right">装饰风格 ：</label>
+                            <div class="col-xs-9 house-color">
+                            	<input type="checkbox"> 现代简约
+                                <input type="checkbox"> 古典中式
+                                <input type="checkbox"> 清新自然
+                                <input type="checkbox"> 欧式现代
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="control-label col-xs-3 text-right">楼盘名称 ：</label>
+                            <div class="col-xs-9">
+                            <input class="form-control " id="" placeholder="" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="control-label col-xs-3 text-right">房屋面积 ：</label>
+                            <div class="col-xs-9">
+                            <input class="form-control fl" id="" placeholder="" type="text"> <span class="fl">&emsp;平米</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="control-label col-xs-3 text-right">预计工期 ：</label>
+                            <div class="col-xs-9">
+                            <input class="form-control fl" id="" placeholder="" type="text"> <span class="fl">&emsp;天</span>
+                            </div>
+                        </div>
+                        <div class="form-group upfile">
+                            <label class="control-label col-xs-3 text-right" for="cardpic">户型上传 ：</label>
+                            <div class="col-xs-9">
+                                <input id="file-1" type="file" multiple class="file" data-overwrite-initial="false" data-min-file-count="2">
+                                <div class="clear"></div>
+                                <p class="help-block fs12 color6 mt15">图片必须是清晰彩色原件电子版，可以是扫描件或者数码拍摄照片。<br>
+                                   仅支持.jpg .jpeg .bmp 的图片格式。<span class="red">图片格式不超过2M。</span></p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="control-label col-xs-3 text-right">水电改造 ：</label>
+                            <div class="col-xs-9">
+                            <input class="form-control fl" id="" placeholder="请输入电源面板个数" type="text"> <span class="fl">&emsp;个（电源面板）</span><br>
+                            <input class="form-control fl mt15" id="" placeholder="请输入水龙头个数" type="text"> <span class="fl mt15">&emsp;个（水龙头）</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="control-label col-xs-3 text-right">房间设计 ：</label>
+                            <div class="col-xs-9">
+                            	<div class="add-design" id="deg1">
+                                    <select class="form-control fl">
+                                       <option>卧室</option>
+                                       <option>客厅</option>
+                                       <option>书房</option>
+                                       <option>儿童房</option>
+                                       <option>厨房</option>
+                                       <option>卫生间</option>
+                                       <option>阳台</option>
+                                       <option>新建</option>
+                                    </select>
+                                    <input class="form-control fl text1" id="" placeholder="" value="" type="text"> <span class="fl">&emsp;平米</span><br><br>
+                                    <input id="file-2" type="file" multiple class="file " data-overwrite-initial="false" data-min-file-count="2">
+                                        <div class="clear"></div>
+                                        <p class="help-block fs12 color6 mt15">图片必须是清晰彩色原件电子版，可以是扫描件或者数码拍摄照片。<br>
+                                           仅支持.jpg .jpeg .bmp 的图片格式。<span class="red">图片格式不超过2M。</span></p>
+                                </div>
+                                <div class="add-design"  id="deg2">
+                                    <select class="form-control fl">
+                                       <option>卧室</option>
+                                       <option>厨房</option>
+                                       <option>客厅</option>
+                                    </select>
+                                    <input class="form-control fl text1" id="" placeholder="" value="" type="text"> <span class="fl">&emsp;平米</span><br><br>
+                                    <input id="file-3" type="file" multiple class="file " data-overwrite-initial="false" data-min-file-count="2">
+                                        <div class="clear"></div>
+                                        <p class="help-block fs12 color6 mt15">图片必须是清晰彩色原件电子版，可以是扫描件或者数码拍摄照片。<br>
+                                           仅支持.jpg .jpeg .bmp 的图片格式。<span class="red">图片格式不超过2M。</span></p>
+                                </div>
+                                <div class="add-design"  id="deg3">
+                                    <select class="form-control fl">
+                                       <option>卧室</option>
+                                       <option>厨房</option>
+                                       <option>客厅</option>
+                                    </select>
+                                    <input class="form-control fl text1" id="" placeholder="" value="" type="text"> <span class="fl">&emsp;平米</span><br><br>
+                                    <input id="file-4" type="file" multiple class="file " data-overwrite-initial="false" data-min-file-count="2">
+                                        <div class="clear"></div>
+                                        <p class="help-block fs12 color6 mt15">图片必须是清晰彩色原件电子版，可以是扫描件或者数码拍摄照片。<br>
+                                           仅支持.jpg .jpeg .bmp 的图片格式。<span class="red">图片格式不超过2M。</span></p>
+                                </div>
+                                <div class="add-design"  id="deg4">
+                                    <select class="form-control fl">
+                                       <option>卧室</option>
+                                       <option>厨房</option>
+                                       <option>客厅</option>
+                                    </select>
+                                    <input class="form-control fl text1" id="" placeholder="" value="" type="text"> <span class="fl">&emsp;平米</span><br><br>
+                                    <input id="file-5" type="file" multiple class="file " data-overwrite-initial="false" data-min-file-count="2">
+                                        <div class="clear"></div>
+                                        <p class="help-block fs12 color6 mt15">图片必须是清晰彩色原件电子版，可以是扫描件或者数码拍摄照片。<br>
+                                           仅支持.jpg .jpeg .bmp 的图片格式。<span class="red">图片格式不超过2M。</span></p>
+                                </div>
+                                <div class="add-design"  id="deg5">
+                                    <select class="form-control fl">
+                                       <option>卧室</option>
+                                       <option>厨房</option>
+                                       <option>客厅</option>
+                                    </select>
+                                    <input class="form-control fl text1" id="" placeholder="" value="" type="text"> <span class="fl">&emsp;平米</span><br><br>
+                                    <input id="file-6" type="file" multiple class="file " data-overwrite-initial="false" data-min-file-count="2">
+                                        <div class="clear"></div>
+                                        <p class="help-block fs12 color6 mt15">图片必须是清晰彩色原件电子版，可以是扫描件或者数码拍摄照片。<br>
+                                           仅支持.jpg .jpeg .bmp 的图片格式。<span class="red">图片格式不超过2M。</span></p>
+                                </div>
+                                <div class="add-design"  id="deg6">
+                                    <select class="form-control fl">
+                                       <option>卧室</option>
+                                       <option>厨房</option>
+                                       <option>客厅</option>
+                                    </select>
+                                    <input class="form-control fl text1" id="" placeholder="" value="" type="text"> <span class="fl">&emsp;平米</span><br><br>
+                                    <input id="file-7" type="file" multiple class="file " data-overwrite-initial="false" data-min-file-count="2">
+                                        <div class="clear"></div>
+                                        <p class="help-block fs12 color6 mt15">图片必须是清晰彩色原件电子版，可以是扫描件或者数码拍摄照片。<br>
+                                           仅支持.jpg .jpeg .bmp 的图片格式。<span class="red">图片格式不超过2M。</span></p>
+                                </div>
+                                <div class="add-design"  id="deg7">
+                                    <select class="form-control fl">
+                                       <option>卧室</option>
+                                       <option>厨房</option>
+                                       <option>客厅</option>
+                                    </select>
+                                    <input class="form-control fl text1" id="" placeholder="" value="" type="text"> <span class="fl">&emsp;平米</span><br><br>
+                                    <input id="file-8" type="file" multiple class="file " data-overwrite-initial="false" data-min-file-count="2">
+                                        <div class="clear"></div>
+                                        <p class="help-block fs12 color6 mt15">图片必须是清晰彩色原件电子版，可以是扫描件或者数码拍摄照片。<br>
+                                           仅支持.jpg .jpeg .bmp 的图片格式。<span class="red">图片格式不超过2M。</span></p>
+                                </div>
+                                <div class="add-design"  id="deg8">
+                                    <select class="form-control fl">
+                                       <option>卧室</option>
+                                       <option>厨房</option>
+                                       <option>客厅</option>
+                                    </select>
+                                    <input class="form-control fl text1" id="" placeholder="" value="" type="text"> <span class="fl">&emsp;平米</span><br><br>
+                                    <input id="file-9" type="file" multiple class="file " data-overwrite-initial="false" data-min-file-count="2">
+                                        <div class="clear"></div>
+                                        <p class="help-block fs12 color6 mt15">图片必须是清晰彩色原件电子版，可以是扫描件或者数码拍摄照片。<br>
+                                           仅支持.jpg .jpeg .bmp 的图片格式。<span class="red">图片格式不超过2M。</span></p>
+                                </div>
+                                <div class="color-green mt20 addother">添加其他房间图片</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-offset-3">
+                        <button type="submit" class="btn btn-green">上传设计</button><a href="materailUpload.html" class="btn btn-orange">下一步</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--footer-->
+<div class="footer mt25">
+<div class="container">
+    <div class="liner-nav">
+        <div class="nav-title">关于我们</div>
+        <ul>
+            <li><a href="" target="_blank">公司介绍</a></li>
+            <li><a href="" target="_blank">企业动态</a></li>
+            <li><a href="" target="_blank">联系我们</a></li>
+            <li><a href="" target="_blank">付款方式</a></li>
+        </ul>
+    </div>
+    <div class="liner-nav">
+        <div class="nav-title">我是业主</div>
+        <ul>
+            <li><a href="" target="_blank">找设计师</a></li>
+            <li><a href="" target="_blank">申请量房</a></li>
+            <li><a href="" target="_blank">申请报价</a></li>
+        </ul>
+    </div>
+    <div class="liner-nav">
+        <div class="nav-title">装修课堂</div>
+        <ul>
+            <li><a href="" target="_blank">装修日记</a></li>
+            <li><a href="" target="_blank">装修风水</a></li>
+            <li><a href="" target="_blank">装修知识</a></li>
+        </ul>
+    </div>
+    <div class="liner-nav liner-nav-kefu">
+        <div class="nav-title">联系客服</div>
+        <ul>
+            <li>周一至周日： 8：00-22：00</li>
+            <li>全国统一服务热线：</li>
+            <li>0311-00000000</li>
+            <li><a href="" class="connect" target="_blank">在线咨询</a></li>
+        </ul>
+    </div>
+    <div class="liner-nav">
+        <div class="nav-title">关注我们</div>
+        <ul>
+            <li><img src="../../images/sts_ewm.jpg"></li>
+        </ul>
+    </div>
+</div>
+</div>
+<div class="footer-mianze">免责声明：本网站部分内容由用户自行上传，如权利人发现存在误传其作品情形，请及时与本站联系
+生态树 保留所有权利</div>
+<!--left菜单b -->
+<nav id="menu-right">
+    <ul>
+        <li class="toplogo" style="border-bottom: 0px; box-shadow: none">
+            <div class="touxiang"><img src="../../images/user.jpg"></div>
+            <div class="name ">1402571912,你好！</div>
+            <div class="renzheng-box"><span class="fl renzheng mt"><i class="icon-renzheng"></i> 已认证</span><span class="fl unrenzheng mt" style="display:none;"><i class="icon-un-renzheng"></i> 未认证 <a href="" class="go-renzheng">去认证>></a></span></div>
+            <div class="message"><span>装修 1</span> <span> 共享 0</span> <span>余额 328</span></div>
+        </li>
+        <li><a href="../index.html" class="ui-link">首页</a></li>
+        <li><a href="userCenter.html" class="ui-link">我的装修</a></li>
+        <li><a href="userShare.html" class="ui-link">我的共享空间</a></li>
+        <li><a href="userbalance.html" class="ui-link">我的余额</a></li>
+        <li><a href="userrelname.html" class="ui-link">实名认证</a></li>
+        <li><a href="userCard.html" class="ui-link">我的银行卡</a></li>
+        <li class="active"><a href="designerUpload.html">上传设计</a></li>
+        <li><a href="myDesign.html">我的设计</a></li>
+        <li><a href="userbalance.html">我的余额</a></li>
+      </ul>
+    
+</nav>
+<!--left菜单e -->
+<script src="../../Scripts/jquery.min.js"></script>
+<script src="../../Scripts/bootstrap.min.js"></script>
+<!--[if lte IE 6]>
+<script type="text/javascript" src="../../Scripts/bootstrap-ie.js"></script>
+<![endif]-->
+<script src="../../Scripts/jquery.jqzoom.js"></script>
+<script src="../../Scripts/jqzoom.js"></script>
+<script src="../../Scripts/detail.js"></script>
+<script src="../../Scripts/bootstrap-fileinput-master/js/fileinput.js" type="text/javascript"></script>
+<script src="../../Scripts/bootstrap-fileinput-master/js/fileinput_locale_zh.js" type="text/javascript"></script>
+<script src="../../Scripts/jquery.mmenu.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+	$('#menu-right').mmenu({position:'right'});
+})
+</script>
+<script type="text/javascript">
+  
+    $("#file-1").fileinput({
+		language:"zh",
+        uploadUrl: '#', // you must set a valid URL here else you will get an error
+        allowedFileExtensions : ['jpg', 'png','gif'],
+        overwriteInitial: false,
+        maxFileSize: 2000,
+        maxFilesNum: 2,
+		showUpload: false, //是否显示上传按钮
+        showCaption: false,//是否显示标题
+        browseClass: "btn btn-green", //按钮样式  
+		//dropZoneEnabled: false,//是否显示拖拽区域
+       // minImageWidth: 1000, //图片的最小宽度
+        //minImageHeight: 50,//图片的最小高度
+        //maxImageWidth: 1000,//图片的最大宽度
+        //maxImageHeight: 1000,//图片的最大高度
+        //maxFileSize: 0,//单位为kb，如果为0表示不限制文件大小
+        //minFileCount: 0,
+        maxFileCount: 2, //表示允许同时上传的最大文件个数
+		dropZoneEnabled: false,//是否显示拖拽区域
+        enctype: 'multipart/form-data',
+        validateInitialCount:true,
+        previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+        msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！",
+        //allowedFileTypes: ['image', 'video', 'flash'],
+        slugCallback: function(filename) {
+            return filename.replace('(', '_').replace(']', '_');
+        }
+	});
+	    $("#file-2").fileinput({
+		language:"zh",
+        uploadUrl: '#', // you must set a valid URL here else you will get an error
+        allowedFileExtensions : ['jpg', 'png','gif'],
+        overwriteInitial: false,
+        maxFileSize: 2000,
+        maxFilesNum: 2,
+		showUpload: false, //是否显示上传按钮
+        showCaption: false,//是否显示标题
+        browseClass: "btn btn-green", //按钮样式  
+        maxFileCount: 2, //表示允许同时上传的最大文件个数
+		dropZoneEnabled: false,//是否显示拖拽区域
+        enctype: 'multipart/form-data',
+        validateInitialCount:true,
+        previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+        msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！",
+        //allowedFileTypes: ['image', 'video', 'flash'],
+        slugCallback: function(filename) {
+            return filename.replace('(', '_').replace(']', '_');
+        }
+	});
+	$("#file-3").fileinput({
+		language:"zh",
+        uploadUrl: '#', // you must set a valid URL here else you will get an error
+        allowedFileExtensions : ['jpg', 'png','gif'],
+        overwriteInitial: false,
+        maxFileSize: 2000,
+        maxFilesNum: 2,
+		showUpload: false, //是否显示上传按钮
+        showCaption: false,//是否显示标题
+        browseClass: "btn btn-green", //按钮样式  
+        maxFileCount: 2, //表示允许同时上传的最大文件个数
+		dropZoneEnabled: false,//是否显示拖拽区域
+        enctype: 'multipart/form-data',
+        validateInitialCount:true,
+        previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+        msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！",
+        //allowedFileTypes: ['image', 'video', 'flash'],
+        slugCallback: function(filename) {
+            return filename.replace('(', '_').replace(']', '_');
+        }
+	});
+	$("#file-4").fileinput({
+		language:"zh",
+        uploadUrl: '#', // you must set a valid URL here else you will get an error
+        allowedFileExtensions : ['jpg', 'png','gif'],
+        overwriteInitial: false,
+        maxFileSize: 2000,
+        maxFilesNum: 2,
+		showUpload: false, //是否显示上传按钮
+        showCaption: false,//是否显示标题
+        browseClass: "btn btn-green", //按钮样式  
+        maxFileCount: 2, //表示允许同时上传的最大文件个数
+		dropZoneEnabled: false,//是否显示拖拽区域
+        enctype: 'multipart/form-data',
+        validateInitialCount:true,
+        previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+        msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！",
+        //allowedFileTypes: ['image', 'video', 'flash'],
+        slugCallback: function(filename) {
+            return filename.replace('(', '_').replace(']', '_');
+        }
+	});
+    $("#file-5").fileinput({
+        language:"zh",
+        uploadUrl: '#', // you must set a valid URL here else you will get an error
+        allowedFileExtensions : ['jpg', 'png','gif'],
+        overwriteInitial: false,
+        maxFileSize: 2000,
+        maxFilesNum: 2,
+        showUpload: false, //是否显示上传按钮
+        showCaption: false,//是否显示标题
+        browseClass: "btn btn-green", //按钮样式  
+        maxFileCount: 2, //表示允许同时上传的最大文件个数
+        dropZoneEnabled: false,//是否显示拖拽区域
+        enctype: 'multipart/form-data',
+        validateInitialCount:true,
+        previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+        msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！",
+        //allowedFileTypes: ['image', 'video', 'flash'],
+        slugCallback: function(filename) {
+            return filename.replace('(', '_').replace(']', '_');
+        }
+    });
+    $("#file-6").fileinput({
+        language:"zh",
+        uploadUrl: '#', // you must set a valid URL here else you will get an error
+        allowedFileExtensions : ['jpg', 'png','gif'],
+        overwriteInitial: false,
+        maxFileSize: 2000,
+        maxFilesNum: 2,
+        showUpload: false, //是否显示上传按钮
+        showCaption: false,//是否显示标题
+        browseClass: "btn btn-green", //按钮样式  
+        maxFileCount: 2, //表示允许同时上传的最大文件个数
+        dropZoneEnabled: false,//是否显示拖拽区域
+        enctype: 'multipart/form-data',
+        validateInitialCount:true,
+        previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+        msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！",
+        //allowedFileTypes: ['image', 'video', 'flash'],
+        slugCallback: function(filename) {
+            return filename.replace('(', '_').replace(']', '_');
+        }
+    });
+    $("#file-7").fileinput({
+        language:"zh",
+        uploadUrl: '#', // you must set a valid URL here else you will get an error
+        allowedFileExtensions : ['jpg', 'png','gif'],
+        overwriteInitial: false,
+        maxFileSize: 2000,
+        maxFilesNum: 2,
+        showUpload: false, //是否显示上传按钮
+        showCaption: false,//是否显示标题
+        browseClass: "btn btn-green", //按钮样式  
+        maxFileCount: 2, //表示允许同时上传的最大文件个数
+        dropZoneEnabled: false,//是否显示拖拽区域
+        enctype: 'multipart/form-data',
+        validateInitialCount:true,
+        previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+        msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！",
+        //allowedFileTypes: ['image', 'video', 'flash'],
+        slugCallback: function(filename) {
+            return filename.replace('(', '_').replace(']', '_');
+        }
+    });
+    $("#file-8").fileinput({
+        language:"zh",
+        uploadUrl: '#', // you must set a valid URL here else you will get an error
+        allowedFileExtensions : ['jpg', 'png','gif'],
+        overwriteInitial: false,
+        maxFileSize: 2000,
+        maxFilesNum: 2,
+        showUpload: false, //是否显示上传按钮
+        showCaption: false,//是否显示标题
+        browseClass: "btn btn-green", //按钮样式  
+        maxFileCount: 2, //表示允许同时上传的最大文件个数
+        dropZoneEnabled: false,//是否显示拖拽区域
+        enctype: 'multipart/form-data',
+        validateInitialCount:true,
+        previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+        msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！",
+        //allowedFileTypes: ['image', 'video', 'flash'],
+        slugCallback: function(filename) {
+            return filename.replace('(', '_').replace(']', '_');
+        }
+    });
+    $("#file-9").fileinput({
+        language:"zh",
+        uploadUrl: '#', // you must set a valid URL here else you will get an error
+        allowedFileExtensions : ['jpg', 'png','gif'],
+        overwriteInitial: false,
+        maxFileSize: 2000,
+        maxFilesNum: 2,
+        showUpload: false, //是否显示上传按钮
+        showCaption: false,//是否显示标题
+        browseClass: "btn btn-green", //按钮样式  
+        maxFileCount: 2, //表示允许同时上传的最大文件个数
+        dropZoneEnabled: false,//是否显示拖拽区域
+        enctype: 'multipart/form-data',
+        validateInitialCount:true,
+        previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+        msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！",
+        //allowedFileTypes: ['image', 'video', 'flash'],
+        slugCallback: function(filename) {
+            return filename.replace('(', '_').replace(']', '_');
+        }
+    });
+	var num = 0;
+	$(".addother").click(function(){
+		$(".add-design").each(function(){
+			if($(this).is(":visible")){
+				num = $(this).index();
+			}
+		});
+		$(".add-design").eq(num+1).show();
+	})
+</script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+@charset "utf-8";
+/*图片放大镜样式*/
+.jqzoom{float:left;border:none;position:relative;padding:0px;cursor:pointer;margin:0px;display:block;}
+.jqzoom img{width:100%; height:100%;}
+.zoomdiv{z-index:100;position:absolute;top:0px;left:0px;width:350px;height:350px;background:#ffffff;border:1px solid #CCCCCC;display:none;text-align:center;overflow:hidden;}
+.jqZoomPup{z-index:10;visibility:hidden;position:absolute;top:0px;left:0px;width:20px;height:20px;border:1px solid #aaa;background:#ffffff;opacity: 0.5;-moz-opacity: 0.5;-khtml-opacity: 0.5;filter: alpha(Opacity=50);}
+
+/*图片小图预览列表*/
+.spec-preview{width:350px;height:350px;border:1px solid #DFDFDF;}
+.spec-scroll{clear:both;margin-top:5px;width:352px;}
+.spec-scroll .prev{float:left;margin-right:4px;}
+.spec-scroll .next{float:right;}
+.spec-scroll .prev,.spec-scroll .next{display:block;font-family:"宋体";text-align:center;width:10px;height:54px; line-height:54px;border:1px solid #CCC;background:#EBEBEB;cursor:pointer;text-decoration:none;}
+.spec-scroll .items{float:left;position:relative;width:322px;height:56px;overflow:hidden;}
+.spec-scroll .items ul{position:absolute;width:999999px;height:56px;}
+.spec-scroll .items ul li{float:left;width:64px;text-align:center;}
+.spec-scroll .items ul li img{border:1px solid #CCC;padding:2px;width:50px;height:50px;}
+.spec-scroll .items ul li img:hover{border:2px solid #75b845;padding:1px;}
+.goods-pic-box{position:inherit;}
+
+/*作品详情*/
+.good-detail .zone{ line-height:40px;}
+.good-detail .other{ line-height:20px;}
+.good-detail .address{ line-height:30px;}
+.yuyue{max-width:350px;}
+.yuyue a{background:#75b845; padding:5px 10px; color:#fff; border-radius:0;}
+.yuyue a:hover,.yuyue a:focus{background:#75b845; color:#fff; border-radius:0;}
+.yuyue a:last-child{ margin-right:6px;}
+
+.s-box{overflow:hidden;}
+.free-measure{width:21px; height:21px; display:inline-block; background:url(../images/icon.png)  no-repeat -68px 0; vertical-align:middle;}
+.refresh{width:21px; height:21px; display:inline-block; background:url(../images/icon.png)  no-repeat -98px 0; vertical-align:middle; margin-left:10px;}
+
+.s-condition .form-group{ margin-left:0;}
+.s-condition .col-sm-4{margin-bottom: 15px;}
+.s-condition .col-sm-2,.s-condition .col-xs-2{width:60px;}
+.s-condition .col-sm-2,.s-condition .col-sm-4,.s-condition .col-xs-2,.s-condition .col-xs-9{ padding-left:0;padding-right:0;}
+.s-condition .form-control{border-radius:0;}
+.icon-down{width:21px; height:21px; display:inline-block; background:url(../images/icon.png)  no-repeat -98px -24px; vertical-align:middle; margin-left:10px; cursor:pointer;}
+
+
+.icon-down.hover {
+	transform:rotate(180deg);
+	-webkit-transform:rotate(180deg)
+}
+.goods-list li{border:1px solid #ddd; padding:10px; overflow:hidden; margin-bottom:10px;}
+.goods-list li .col-xs-3{ line-height:30px;}
+.goods-list li .col-xs-6{ line-height:35px;}
+.goods-list li .col-xs-3 input[type=checkbox]{ margin-right:10px;}
+.submit-order{border:1px solid #ddd; padding:10px; overflow:hidden; margin-bottom:10px; background:#e5e5e5; z-index:1;}
+.add-goods{position:absolute; right:-11px; z-index:2; border:1px solid #fa9600; color:#fff; text-align:center; line-height:44px; top:-11px;width:110px; height:46px; background:#fa9600; display:block;}
+.add-goods:hover,.add-goods:focus{color:#fff;}
+.pay-goods{position:absolute; right:-11px; z-index:2; border:1px solid #fa9600; color:#fff; text-align:center; line-height:57px; top:-11px;width:110px; height:57px; background:#fa9600; display:block;}
+.pay-goods:hover,.add-goods:focus{color:#fff;}
+
+.total{padding-right:110px;}
+
+.s-address{margin-left: 22px;}
+.s-address .form-control{width:120px; border-radius:0; margin-right:7px;}
+.s-address .zone-txt{margin-right:10px;}
+.s-address input.form-control {width:160px;}
+
+/*特价装修*/
+.special-title{text-align:left;}
+.special .col-xs-3{padding:0;}
+.special .row {
+    margin: 0 -8px 0 -8px;
+}
+
+/*我要贷款页面*/
+.user-box { text-align:center; margin-top:50px;}
+.user-pic{width:97px; height:97px; border-radius:97px; }
+.user-box p{ line-height:24px; padding-top:10px;}
+.user-box .go-renzheng{color:#f00; padding-left:15px;}
+.loan-form{margin-top:50px;border-left:1px solid #ddd;}
+.loan-form input,.loan-form select{height:38px;border-radius:0;}
+.loan-form h3{margin-top:0;}
+.loan-form .col-sm-4{padding-left:0;padding-right:0;}
+.loan-form .btn-orange{ height:38px; border-radius:0; font-size:18px;}
+.bank-detail{border:1px solid #ddd; padding:10px; width:100%; min-height:300px;}
+.bank{margin-top:50px;}
