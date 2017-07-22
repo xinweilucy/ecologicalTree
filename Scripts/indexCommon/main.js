@@ -1,7 +1,7 @@
 // JavaScript Document
 //index slider
 var mySwiper = new Swiper('.swiper-container',{
-    pagination: '.pagination',
+    pagination: '.pagination2',
     paginationClickable: true,
 	loop: true,
 	calculateHeight:true,
@@ -71,6 +71,30 @@ $(window).load(function() {
 	
 });
 //返回顶部
+$(window).scroll(function(){
+	var h = $(window).scrollTop();
+	if(h >500){
+		$(".back-top").show();
+	}else{
+		$(".back-top").hide();
+	}
+})
 $(".back-top").click(function(){
 	$("body,html").animate({scrollTop:"0px"},500);
+})
+//导航
+var navigation = responsiveNav("#nav",{
+  label: "<i class='icon-reorder color-green'></i>",
+  openPos: "relative",
+  insert: "before",
+});
+$(".open-screen").click(function(){
+	var screenList = $(this).parent();
+	if(screenList.nextAll().is(":visible")){
+		screenList.siblings().slideUp();
+		$(this).html("展开选择");
+	}else{
+		screenList.siblings().slideDown();
+		$(this).html("点击收起");
+	}
 })

@@ -11,6 +11,7 @@
 @media all and (max-width:997px){
 	.login-form{width:90%;}
 }
+
 .login-form .form-control{height:39px; border-radius:0;}
 .btn-login{ height:39px; background:#75b845; border-radius:0; color:#fff;}
 .btn-login:hover{background:#8dd559;color:#fff;}
@@ -27,3 +28,12 @@
 
 .btn-yzm{height:39px;background:#fa9600;border-radius:0; color:#fff;}
 .btn-yzm:hover{height:39px;background:#fa9600;border-radius:0; color:#fff;}
+@media all and (max-width:520px){
+	.login-box{ padding:34px 0;}
+	.change-box{margin-top:16px;}
+	.right,.wrong{padding-left: 20px;}
+	.form-group{margin-bottom: 5px;}
+	.remind .col-sm-3,.remind .col-sm-2{width: 50%; float: left;}
+	.register_yzm{width: 50%; float: left;}
+	.btn-yzm{margin-left: 16px;}
+}

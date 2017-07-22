@@ -7,6 +7,7 @@
 <!-- 引入 Bootstrap -->
 <link href="../Style/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="../Style/font-awesome.min.css">
+<link rel="stylesheet" href="../Style/responsive-nav.css">
 <link href="../Style/reset.css" rel="stylesheet">
 <link href="../Style/main.css" rel="stylesheet">
 <link href="../Style/detail.css" rel="stylesheet">
@@ -35,7 +36,7 @@
     	<div class="row">
         	<div class="col-sm-7"><a href="index.html"><img src="../images/logo.png"></a></div>
             <div class="col-sm-5 text-right">
-            	<ul class="nav nav-pills nav-justified mt15">
+            	<ul class="nav nav-pills nav-justified mt15" id="nav">
                 	<li class="active"><a href="index.html" target="_blank">我要装修</a></li>
                     <li><a href="myLoan.html" target="_blank">我要贷款</a></li>
                     <li><a href="" target="_blank">建材商城</a></li>
@@ -48,10 +49,18 @@
 <div class="s-banner"><img src="../images/my-loan.jpg"></div>
 <div class="container mb50">
     <div class="row">
-        <div class="col-xs-3">
-        	<div class="user-box fs12"><a href=""><img class="user-pic" src="../images/user.jpg"></a><p><i class="icon-renzheng"></i> 已认证</p><p><i class="icon-un-renzheng"></i> 未认证<a href="" class="go-renzheng">去认证>></a></p></div>
+        <div class="col-sm-3">
+        	<div class="user-box fs12">
+                <div class="user-pic-box">
+                    <a href=""><img class="user-pic" src="../images/user.jpg"></a>
+                </div>
+                <div class="renzheng-box">
+                    <p><i class="icon-renzheng"></i> 已认证</p>
+                    <p><i class="icon-un-renzheng"></i> 未认证<a href="" class="go-renzheng">去认证>></a></p>
+                </div>
+            </div>
         </div>
-        <div class="col-xs-5 loan-form">
+        <div class="col-sm-5 loan-form">
         	<h3 class="color-green col-sm-4 text-right">申请贷款</h3>
             <div class="clear"></div>
             <form class="form-horizontal mt20" role="form">
@@ -85,7 +94,7 @@
               <div class=" col-sm-offset-4 col-sm-6 mt20"><button type="submit" class="btn btn-default btn-block btn-orange">提 交</button></div>
             </form>
         </div>
-        <div class="col-xs-4 bank">
+        <div class="col-sm-4 bank">
         	<p>招商银行个人贷款业务说明：</p>
             <div class="bank-detail fs12 color6">
             	购房专享装修贷款：<br>
@@ -163,6 +172,7 @@
 <script src="../Scripts/bootstrap.min.js"></script>
 <script src="../Scripts/jquery.jqzoom.js"></script>
 <script src="../Scripts/jqzoom.js"></script>
+<script src="../Scripts/responsive-nav.js"></script>
 <script src="../Scripts/detail.js"></script>
 </body>
 </html>

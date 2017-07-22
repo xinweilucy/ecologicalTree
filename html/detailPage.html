@@ -7,6 +7,7 @@
 <!-- 引入 Bootstrap -->
 <link href="../Style/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="../Style/font-awesome.min.css">
+<link rel="stylesheet" href="../Style/responsive-nav.css">
 <link href="../Style/reset.css" rel="stylesheet">
 <link href="../Style/main.css" rel="stylesheet">
 <link href="../Style/detail.css" rel="stylesheet">
@@ -35,7 +36,7 @@
     	<div class="row">
         	<div class="col-sm-7"><a href="index.html"><img src="../images/logo.png"></a></div>
             <div class="col-sm-5 text-right">
-            	<ul class="nav nav-pills nav-justified mt15">
+            	<ul class="nav nav-pills nav-justified mt15" id="nav">
                 	<li class="active"><a href="index.html" target="_blank">我要装修</a></li>
                     <li><a href="myLoan.html" target="_blank">我要贷款</a></li>
                     <li><a href="" target="_blank">建材商城</a></li>
@@ -48,7 +49,7 @@
 <div class="container">
 	<div class="s-road"><a href="index.html">首页</a> > <a href="">我要装修</a> > <a href="">详情</a></div>
 </div>
-<div class="container mt5">
+<div class="container mt5 detail-box">
 	<div class="col-md-4 goods-pic-box">
       <!--产品参数开始-->
         <div id="preview" class="spec-preview"> <span class="jqzoom"><img jqimg="../images/rs.jpg" src="../images/rongsheng.jpg" /></span> </div>
@@ -73,6 +74,18 @@
         </div>
         <!--缩图结束-->
       <!--产品参数结束-->
+      <!--移动端小屏轮播开始-->
+      <div class="banner">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#"><img  src="../images/rs.jpg" ></a></div>
+            <div class="swiper-slide"><a href="#"><img  src="../images/rs.jpg" ></a></div>
+            <div class="swiper-slide"><a href="#"><img  src="../images/rs.jpg" ></a></div>
+          </div>
+          <div class="pagination2"></div>
+        </div>
+      </div>
+      <!-- 移动端小屏轮播结束 -->
       <div class="clear"></div>
       <div class="good-detail mt20">
       	<div class="zone fs18">荣盛华府</div>
@@ -82,10 +95,10 @@
       </div>
           <div class="clear"></div>
 	</div>
-    <div class="col-md-8">
+    <div class="col-md-8 goods-detail-list">
     	<div class="s-box">
         	<div class="zone fs18 fl">129平荣盛华府精装 现代简约</div>
-            <div class="fr"><a href="javascript:;" class="color3"><i class="free-measure"></i> 免费量房</a><a href="javascript:;" class="color3"><i class="refresh"></i> 更新</a></div>
+            <div class="fr free-box"><a href="javascript:;" class="color3"><i class="free-measure"></i> 免费量房</a><a href="javascript:;" class="color3"><i class="refresh"></i> 更新</a></div>
         </div>
         <div class="s-condition mt15">
         	<form class="form-horizontal" role="form">
@@ -372,8 +385,10 @@
 </div>
 <script src="../Scripts/jquery.min.js"></script>
 <script src="../Scripts/bootstrap.min.js"></script>
+<script src="../Scripts/idangerous.swiper-2.1.min.js"></script>
 <script src="../Scripts/jquery.jqzoom.js"></script>
 <script src="../Scripts/jqzoom.js"></script>
+<script src="../Scripts/responsive-nav.js"></script>
 <script src="../Scripts/detail.js"></script>
 </body>
 </html>
