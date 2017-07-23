@@ -25,3 +25,15 @@ var mySwiper = new Swiper('.swiper-container',{
 	calculateHeight:true,
 	autoplay: 3000
   });
+//房子面积
+$(".house-size").click(function(){
+	var size = $(".other-size-box");
+	var houseSize = $(this);
+	if(size.is(":visible")){
+		size.slideUp();
+		houseSize.html('更多条件 <i class="icon-double-angle-down color-green"></i>');
+	}else{
+		size.slideDown();
+		houseSize.html('收起条件  <i class="icon-double-angle-up color-green"></i>');
+	}
+})

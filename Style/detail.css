@@ -213,6 +213,8 @@
 .s-condition .col-sm-2,.s-condition .col-sm-4,.s-condition .col-xs-2,.s-condition .col-xs-9{ padding-left:0;padding-right:0;}
 .s-condition .form-control{border-radius:0;}
 .icon-down{width:21px; height:21px; display:inline-block; background:url(../images/icon.png)  no-repeat -98px -24px; vertical-align:middle; margin-left:10px; cursor:pointer;}
+.house-size{padding: 0 20px; margin-top: -10px; display: none;}
+.house-size a:hover i,.house-size a:focus i{color: #75b845;}
 @media screen and (max-width: 768px){
 	.goods-detail-list{margin-top: 36px;}
 }
@@ -228,6 +230,8 @@
 	.order-free-box{position: absolute; right: 10px; top:-40px; width: 100%; text-align: left; float: left;}
 	.goods-detail-list .form-group:first-child{margin-bottom: 0;}
 	.loan,.online{display: none;}
+	.house-size{display: block;}
+	.other-size-box{display: none;}
 }
 
 .icon-down.hover {

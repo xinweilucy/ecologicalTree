@@ -119,4 +119,6 @@
 .back-top a ,.loan a,.online a{color:#999;}
 .back-top a:focus ,.loan a:focus,.online a:focus{color:#999;}
 .back-top:hover a,.loan:hover a,.online:hover a{color:#fff;}
-
+@media screen and (max-width:520px){
+	.back-top{right:1px;}
+}
